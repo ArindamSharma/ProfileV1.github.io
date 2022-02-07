@@ -1,0 +1,23 @@
+.main-container{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    /* flex-wrap: wrap; */
+}
+.main-container-image{
+    flex: 3;
+    background-color:black;
+    transform: rotate(10deg);
+    background-image: url(../img/me.png);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+.main-container-content{
+    flex: 2;
+    transform: rotate(10deg);
+    background-color: blueviolet;
+}
