@@ -106,10 +106,13 @@ html{
     align-items: center;
     text-decoration: none;
     padding: 1rem 1rem 1rem 1.5rem;
-    background-color: rgba(255, 255, 255, 0.603);
+    background-color: rgba(224, 224, 224, 0.363);
     border-radius: 5rem;
     color: rgb(134, 134, 134);
 
+}
+.navbar-left-menu-item-link:hover{
+    background-color: rgba(150, 150, 150, 0.363);
 }
 .navbar-left-menu-item-link:hover .navbar-left-menu-item-link-label{
     font-size: 1.5rem;
@@ -164,7 +167,7 @@ html{
 .main-container-home-content-image{
     z-index: -1;
     height: 30vw;
-    filter: drop-shadow(-25px 15px 10px rgba(100, 100, 100, 0.89));
+    filter: drop-shadow(-50px 10px 9px rgba(100, 100, 100, 0.89));
 }
 .main-container-home-content-text-h1{
     /* flex-grow: 2; */
@@ -187,8 +190,8 @@ html{
 
 /* Skils Container */
 .main-container-skill{
-    background-color: rgb(145, 177, 168);
-    box-shadow: 0px -10px 1rem #77767683;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px -8px 1rem #b3b3b34b;
     padding-right: 3vw;
     padding-left: calc(6.5rem + 5vw);
     padding-top: 5rem;
@@ -237,7 +240,7 @@ html{
 }
 .main-container-skill-hwidget-card-container{
     /* flex-grow: 2; */
-    min-width: 20vw;
+    /* min-width: 20vw; */
     padding: 2rem 0 2rem 0;
     display: flex;
     /* overflow-x: scroll; */
@@ -246,15 +249,21 @@ html{
     scroll-behavior: smooth;
 }
 .main-container-skill-hwidget-card{
-    height: 20rem;
+    height: 25rem;
     min-width: 15rem;
+    max-width: 18rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 1rem;
-    background-color: rgba(189, 218, 214, 0.685);
+    margin: 1.1rem;
+    background-color: rgba(231, 231, 231, 0.685);
     border-radius: 7px;
+    transition: .5s;
+}
+.main-container-skill-hwidget-card:hover{
+    /* margin: 2rem; */
+    box-shadow: 0 0 1rem rgb(150, 150, 150);
 }
 .main-container-skill-hwidget-card-arc{
     height: 100px;
@@ -263,7 +272,30 @@ html{
     /* justify-content: center; */
     /* align-items: center; */
 }
-
+.main-container-skill-hwidget-card-labelbox{
+    padding: .5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+}
+.main-container-skill-hwidget-card-labelbox-text{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+.main-container-skill-hwidget-card-labelbox-img{
+    /* width: 3rem; */
+    height: 3rem;
+}
+.main-container-skill-hwidget-card-description{
+    /* width: 3rem; */
+    text-align: center;
+    padding: 1rem;
+}
 
 
 /* Project Container */

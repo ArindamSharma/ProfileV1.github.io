@@ -15,7 +15,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Seymour+One&display=swap" rel="stylesheet">
     <title>Arindam Sharma</title>
 </head>
-<body onload="OnLoadFunction()">
+<body onload="OnLoadFunctions()">
     <nav class="navbar">
         <div class="navbar-top">
             <div class="navbar-top-menu-toggle-icon" onclick="OnClickMenuToggle()">
@@ -32,45 +32,45 @@
         </div>
         <div class="navbar-left">
             <div class="navbar-left-menu-item">
-                <a href="#home" class="navbar-left-menu-item-link">
+                <a href="#home" class="navbar-left-menu-item-link" onclick="OnClickMenuToggleOff()">
                     <i class="navbar-left-menu-item-link-icon fa fa-home fa-lg" aria-hidden="true"></i>
                     <span class="navbar-left-menu-item-link-label">Home</span>
                 </a>
             </div>
             <div class="navbar-left-menu-item">
-                <a href="#skills" class="navbar-left-menu-item-link">
+                <a href="#skills" class="navbar-left-menu-item-link" onclick="OnClickMenuToggleOff()">
                     <i class="navbar-left-menu-item-link-icon fa fa-cogs fa-lg" aria-hidden="true"></i>
                     <span class="navbar-left-menu-item-link-label">Skills</span>
                 </a>
             </div>
             <div class="navbar-left-menu-item">
-                <a href="#project" class="navbar-left-menu-item-link">
+                <a href="#project" class="navbar-left-menu-item-link" onclick="OnClickMenuToggleOff()">
                     <i class="navbar-left-menu-item-link-icon fa fa-pie-chart fa-lg" aria-hidden="true"></i>
                     <span class="navbar-left-menu-item-link-label">Project</span>
                 </a>
             </div>
             <div class="navbar-left-menu-item">
-                <a href="#exp" class="navbar-left-menu-item-link">
+                <a href="#exp" class="navbar-left-menu-item-link" onclick="OnClickMenuToggleOff()">
                     <i class="navbar-left-menu-item-link-icon fa fa-user-secret fa-lg" aria-hidden="true"></i>
                     <span class="navbar-left-menu-item-link-label">Experience</span>
                 </a>
             </div>
             <div class="navbar-left-menu-item">
-                <a href="#achive" class="navbar-left-menu-item-link">
+                <a href="#achive" class="navbar-left-menu-item-link" onclick="OnClickMenuToggleOff()">
                     <i class="navbar-left-menu-item-link-icon fa fa-trophy fa-lg" aria-hidden="true"></i>
                     <span class="navbar-left-menu-item-link-label">Achievements</span>
                 </a>
             </div>
             <div class="navbar-left-menu-item">
-                <a href="#contact" class="navbar-left-menu-item-link">
+                <a href="#contact" class="navbar-left-menu-item-link" onclick="OnClickMenuToggleOff()">
                     <i class="navbar-left-menu-item-link-icon fa fa-user fa-lg" aria-hidden="true"></i>
                     <span class="navbar-left-menu-item-link-label">Contact</span>
                 </a>
             </div>
         </div>
     </nav>
-    <div class="main-container" id="home">
-        <div class="main-container-home" >
+    <div class="main-container">
+        <div class="main-container-home" id="home">
             <span class="main-container-home-brand">Arindam Sharma</span>
             <div class="main-container-home-content">
                 <div class="main-container-home-content-text">
@@ -82,11 +82,11 @@
         </div>
         <div class="main-container-skill" id="skills">
             <span class="main-container-skill-title">Skills</span>
-            <div class="main-container-skill-container">
+            <!-- <div class="main-container-skill-container">
                 <span class="main-container-skill-container-title">CP Language</span>
                 <div class="main-container-skill-hwidget">
                     <div class="main-container-skill-hwidget-lbutton" onclick="skillScrollLeft()">
-                        <i class="main-container-skill-hwidget-lbutton-icon fa fa-angle-left fa-3x"></i>
+                        <i class="fa fa-angle-left fa-3x"></i>
                     </div>
                     <div class="main-container-skill-hwidget-card-container">
                         <div class="main-container-skill-hwidget-card">
@@ -151,7 +151,7 @@
                         </div>
                     </div>
                     <div class="main-container-skill-hwidget-rbutton" onclick="skillScrollRight()">
-                        <i class="main-container-skill-hwidget-rbutton-icon fa fa-angle-right fa-3x"></i>
+                        <i class="fa fa-angle-right fa-3x"></i>
                     </div>
                 </div>
             </div>
@@ -159,7 +159,7 @@
                 <span class="main-container-skill-container-title">Web Dev Skills</span>
                 <div class="main-container-skill-hwidget">
                     <div class="main-container-skill-hwidget-lbutton" onclick="skillScrollLeft()">
-                        <i class="main-container-skill-hwidget-lbutton-icon fa fa-angle-left fa-3x"></i>
+                        <i class="fa fa-angle-left fa-3x"></i>
                     </div>
                     <div class="main-container-skill-hwidget-card-container">
                         <div class="main-container-skill-hwidget-card">
@@ -224,7 +224,7 @@
                         </div>
                     </div>
                     <div class="main-container-skill-hwidget-rbutton" onclick="skillScrollRight()">
-                        <i class="main-container-skill-hwidget-rbutton-icon fa fa-angle-right fa-3x"></i>
+                        <i class="fa fa-angle-right fa-3x"></i>
                     </div>
                 </div>
             </div>
@@ -232,9 +232,9 @@
                 <span class="main-container-skill-container-title">Databases Skills</span>
                 <div class="main-container-skill-hwidget">
                     <div class="main-container-skill-hwidget-lbutton" onclick="skillScrollLeft()">
-                        <i class="main-container-skill-hwidget-lbutton-icon fa fa-angle-left fa-3x"></i>
+                        <i class="fa fa-angle-left fa-3x"></i>
                     </div>
-                    <div class="main-container-skill-hwidget-card-container">   
+                    <div class="main-container-skill-hwidget-card-container">
                         <div class="main-container-skill-hwidget-card">
                             <canvas class="main-container-skill-hwidget-card-arc">4</canvas>
                             <span class="main-container-skill-hwidget-card-label">C++1 Box</span>
@@ -255,10 +255,10 @@
                         </div>
                     </div>
                     <div class="main-container-skill-hwidget-rbutton" onclick="skillScrollRight()">
-                        <i class="main-container-skill-hwidget-rbutton-icon fa fa-angle-right fa-3x"></i>
+                        <i class="fa fa-angle-right fa-3x"></i>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </div>
         <div class="main-container-project" id="project">
             <span>Project</span> 
@@ -280,4 +280,5 @@
 </body>
 
 <script src="./main.js"></script>
+<script src="./constant.js"></script>
 </html>
