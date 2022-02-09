@@ -1,99 +1,283 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-        <link rel="stylesheet" href="static/css/home.css">
-        <script src="static/js/home.js"></script>
-		<title>Arindam Sharma</title>
-	</head>
-	<body>
-		<nav class="top-navbar">
-			<div class="top-navbar-item">
-                <div class="top-navbar-item-menu" onclick="myopen()">
-                    <div class="top-navbar-item-menu-line"></div>
-                    <div class="top-navbar-item-menu-line"></div>
-                    <div class="top-navbar-item-menu-line"></div>
-                </div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="icon" type="image/x-icon" href="https://raw.githubusercontent.com/ArindamSharma/ArindamSharma.github.io/master/img/face.png" >
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="./main.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">    
+    <link href="https://fonts.googleapis.com/css2?family=Stalinist+One&display=swap" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Seymour+One&display=swap" rel="stylesheet">
+    <title>Arindam Sharma</title>
+</head>
+<body onload="OnLoadFunction()">
+    <nav class="navbar">
+        <div class="navbar-top">
+            <div class="navbar-top-menu-toggle-icon" onclick="OnClickMenuToggle()">
+                <div class="navbar-top-menu-toggle-icon-line"></div>
+                <div class="navbar-top-menu-toggle-icon-line"></div>
+                <div class="navbar-top-menu-toggle-icon-line"></div>
             </div>
-            <!-- <a class="top-navbar-item top-navbar-brand" href="index.html">
-                <span>Arindam Sharma</span>
-            </a> -->
-			<form class="top-navbar-item top-navbar-item-search-box">
-                <input class="top-navbar-item-search-input" type="text" placeholder="Search">
-                <button class="top-navbar-item-search-btn" type="submit">
-                    <i class="fa fa-search" aria-hidden="true"></i>
+            <form class="navbar-top-searchbox">
+                <input class="navbar-top-searchbox-input" type="text" placeholder="Search">
+                <button class="navbar-top-searchbox-button" type="submit">
+                    <i class="fa fa-search fa-lg" aria-hidden="true"></i>
                 </button>
             </form>
-		</nav>
-		<nav class="left-navbar">
-            <div class="left-navbar-item">
-			    <a class="left-navbar-item-box" href="">
-					<i class="fa fa-home left-navbar-item-box-icon" aria-hidden="true"></i>
-					<span class="left-navbar-item-box-label"> Home</span>
+        </div>
+        <div class="navbar-left">
+            <div class="navbar-left-menu-item">
+                <a href="#home" class="navbar-left-menu-item-link">
+                    <i class="navbar-left-menu-item-link-icon fa fa-home fa-lg" aria-hidden="true"></i>
+                    <span class="navbar-left-menu-item-link-label">Home</span>
                 </a>
             </div>
-            <div class="left-navbar-item">
-			    <a class="left-navbar-item-box" href="">
-					<i class="fa fa-cogs left-navbar-item-box-icon" aria-hidden="true"></i>
-					<span class="left-navbar-item-box-label"> Skills</span>
+            <div class="navbar-left-menu-item">
+                <a href="#skills" class="navbar-left-menu-item-link">
+                    <i class="navbar-left-menu-item-link-icon fa fa-cogs fa-lg" aria-hidden="true"></i>
+                    <span class="navbar-left-menu-item-link-label">Skills</span>
                 </a>
             </div>
-            <div class="left-navbar-item">
-			    <a class="left-navbar-item-box" href="">
-					<i class="fa fa-pie-chart left-navbar-item-box-icon" aria-hidden="true"></i>
-					<span class="left-navbar-item-box-label"> Project/Experience</span>
+            <div class="navbar-left-menu-item">
+                <a href="#project" class="navbar-left-menu-item-link">
+                    <i class="navbar-left-menu-item-link-icon fa fa-pie-chart fa-lg" aria-hidden="true"></i>
+                    <span class="navbar-left-menu-item-link-label">Project</span>
                 </a>
             </div>
-            <div class="left-navbar-item">
-			    <a class="left-navbar-item-box" href="">
-					<i class="fa fa-trophy left-navbar-item-box-icon" aria-hidden="true"></i>
-					<span class="left-navbar-item-box-label"> Achievements</span>
+            <div class="navbar-left-menu-item">
+                <a href="#exp" class="navbar-left-menu-item-link">
+                    <i class="navbar-left-menu-item-link-icon fa fa-user-secret fa-lg" aria-hidden="true"></i>
+                    <span class="navbar-left-menu-item-link-label">Experience</span>
                 </a>
             </div>
-            <div class="left-navbar-item">
-			    <a class="left-navbar-item-box" href="">
-					<i class="fa fa-info left-navbar-item-box-icon" aria-hidden="true"></i>
-					<span class="left-navbar-item-box-label"> About</span>
+            <div class="navbar-left-menu-item">
+                <a href="#achive" class="navbar-left-menu-item-link">
+                    <i class="navbar-left-menu-item-link-icon fa fa-trophy fa-lg" aria-hidden="true"></i>
+                    <span class="navbar-left-menu-item-link-label">Achievements</span>
                 </a>
             </div>
-            <div class="left-navbar-item">
-		    	<a class="left-navbar-item-box" href="">
-					<i class="fa fa-user left-navbar-item-box-icon" aria-hidden="true"></i>
-					<span class="left-navbar-item-box-label"> Contact</span>
+            <div class="navbar-left-menu-item">
+                <a href="#contact" class="navbar-left-menu-item-link">
+                    <i class="navbar-left-menu-item-link-icon fa fa-user fa-lg" aria-hidden="true"></i>
+                    <span class="navbar-left-menu-item-link-label">Contact</span>
                 </a>
             </div>
-		</nav>
-		<main class="main-container">
-            <div class="main-container-section">
-                <div style="font-size: 5vw;">
-					Page Under Construction
-				</div> 
+        </div>
+    </nav>
+    <div class="main-container" id="home">
+        <div class="main-container-home" >
+            <span class="main-container-home-brand">Arindam Sharma</span>
+            <div class="main-container-home-content">
+                <div class="main-container-home-content-text">
+                    <span class="main-container-home-content-text-h1">Enthusiast Learner</span>
+                    <p class="main-container-home-content-text-p">I am a 5th year Computer Science Student @IIITDM Kancheepuram.I am interested in Build tools and applications ,learning new Technologies,language ..etc. I am a fast learner. </p>
+                </div>
+                <img class="main-container-home-content-image" src="./img/me.png" alt="Me" srcset="">
             </div>
-            <div class="main-container-section">
-                <div style="font-size: 5vw;">
-					Page Under Construction
-				</div> 
+        </div>
+        <div class="main-container-skill" id="skills">
+            <span class="main-container-skill-title">Skills</span>
+            <div class="main-container-skill-container">
+                <span class="main-container-skill-container-title">CP Language</span>
+                <div class="main-container-skill-hwidget">
+                    <div class="main-container-skill-hwidget-lbutton" onclick="skillScrollLeft()">
+                        <i class="main-container-skill-hwidget-lbutton-icon fa fa-angle-left fa-3x"></i>
+                    </div>
+                    <div class="main-container-skill-hwidget-card-container">
+                        <div class="main-container-skill-hwidget-card">
+                            <canvas class="main-container-skill-hwidget-card-arc">3</canvas>
+                            <span class="main-container-skill-hwidget-card-label">C++0 Box</span>
+                            <span class="main-container-skill-hwidget-card-description">C++0 Box</span>
+    
+                        </div>
+                        <div class="main-container-skill-hwidget-card">
+                            <canvas class="main-container-skill-hwidget-card-arc">4</canvas>
+                            <span class="main-container-skill-hwidget-card-label">C++1 Box</span>
+                            <span class="main-container-skill-hwidget-card-description">C++1 Box</span>
+    
+                        </div>
+                        <div class="main-container-skill-hwidget-card">
+                            <canvas class="main-container-skill-hwidget-card-arc">10</canvas>
+                            <span class="main-container-skill-hwidget-card-label">C++2 Box</span>
+                            <span class="main-container-skill-hwidget-card-description">C++2 Box</span>
+    
+                        </div>
+                        <div class="main-container-skill-hwidget-card">
+                            <canvas class="main-container-skill-hwidget-card-arc">5</canvas>
+                            <span class="main-container-skill-hwidget-card-label">C++3 Box</span>
+                            <span class="main-container-skill-hwidget-card-description">C++3 Box</span>
+    
+                        </div>
+                        <div class="main-container-skill-hwidget-card">
+                            <canvas class="main-container-skill-hwidget-card-arc">5</canvas>
+                            <span class="main-container-skill-hwidget-card-label">C++4 Box</span>
+                            <span class="main-container-skill-hwidget-card-description">C++4 Box</span>
+    
+                        </div>
+                        <div class="main-container-skill-hwidget-card">
+                            <canvas class="main-container-skill-hwidget-card-arc">6</canvas>
+                            <span class="main-container-skill-hwidget-card-label">C++5 Box</span>
+                            <span class="main-container-skill-hwidget-card-description">C++5 Box</span>
+    
+                        </div>
+                        <div class="main-container-skill-hwidget-card">
+                            <canvas class="main-container-skill-hwidget-card-arc">6</canvas>
+                            <span class="main-container-skill-hwidget-card-label">C++6 Box</span>
+                            <span class="main-container-skill-hwidget-card-description">C++6 Box</span>
+    
+                        </div>
+                        <div class="main-container-skill-hwidget-card">
+                            <canvas class="main-container-skill-hwidget-card-arc">5</canvas>
+                            <span class="main-container-skill-hwidget-card-label">C++7 Box</span>
+                            <span class="main-container-skill-hwidget-card-description">C++7 Box</span>
+    
+                        </div>
+                        <div class="main-container-skill-hwidget-card">
+                            <canvas class="main-container-skill-hwidget-card-arc">4</canvas>
+                            <span class="main-container-skill-hwidget-card-label">C++8 Box</span>
+                            <span class="main-container-skill-hwidget-card-description">C++8 Box</span>
+    
+                        </div>
+                        <div class="main-container-skill-hwidget-card">
+                            <canvas class="main-container-skill-hwidget-card-arc">7</canvas>
+                            <span class="main-container-skill-hwidget-card-label">C++9 Box</span>
+                            <span class="main-container-skill-hwidget-card-description">C++9 Box</span>
+    
+                        </div>
+                    </div>
+                    <div class="main-container-skill-hwidget-rbutton" onclick="skillScrollRight()">
+                        <i class="main-container-skill-hwidget-rbutton-icon fa fa-angle-right fa-3x"></i>
+                    </div>
+                </div>
             </div>
-            <div class="main-container-section">
-                <div style="font-size: 5vw;">
-					Page Under Construction
-				</div> 
+            <div class="main-container-skill-container">
+                <span class="main-container-skill-container-title">Web Dev Skills</span>
+                <div class="main-container-skill-hwidget">
+                    <div class="main-container-skill-hwidget-lbutton" onclick="skillScrollLeft()">
+                        <i class="main-container-skill-hwidget-lbutton-icon fa fa-angle-left fa-3x"></i>
+                    </div>
+                    <div class="main-container-skill-hwidget-card-container">
+                        <div class="main-container-skill-hwidget-card">
+                            <canvas class="main-container-skill-hwidget-card-arc">3</canvas>
+                            <span class="main-container-skill-hwidget-card-label">C++0 Box</span>
+                            <span class="main-container-skill-hwidget-card-description">C++0 Box</span>
+    
+                        </div>
+                        <div class="main-container-skill-hwidget-card">
+                            <canvas class="main-container-skill-hwidget-card-arc">4</canvas>
+                            <span class="main-container-skill-hwidget-card-label">C++1 Box</span>
+                            <span class="main-container-skill-hwidget-card-description">C++1 Box</span>
+    
+                        </div>
+                        <div class="main-container-skill-hwidget-card">
+                            <canvas class="main-container-skill-hwidget-card-arc">10</canvas>
+                            <span class="main-container-skill-hwidget-card-label">C++2 Box</span>
+                            <span class="main-container-skill-hwidget-card-description">C++2 Box</span>
+    
+                        </div>
+                        <div class="main-container-skill-hwidget-card">
+                            <canvas class="main-container-skill-hwidget-card-arc">5</canvas>
+                            <span class="main-container-skill-hwidget-card-label">C++3 Box</span>
+                            <span class="main-container-skill-hwidget-card-description">C++3 Box</span>
+    
+                        </div>
+                        <div class="main-container-skill-hwidget-card">
+                            <canvas class="main-container-skill-hwidget-card-arc">5</canvas>
+                            <span class="main-container-skill-hwidget-card-label">C++4 Box</span>
+                            <span class="main-container-skill-hwidget-card-description">C++4 Box</span>
+    
+                        </div>
+                        <div class="main-container-skill-hwidget-card">
+                            <canvas class="main-container-skill-hwidget-card-arc">6</canvas>
+                            <span class="main-container-skill-hwidget-card-label">C++5 Box</span>
+                            <span class="main-container-skill-hwidget-card-description">C++5 Box</span>
+    
+                        </div>
+                        <div class="main-container-skill-hwidget-card">
+                            <canvas class="main-container-skill-hwidget-card-arc">6</canvas>
+                            <span class="main-container-skill-hwidget-card-label">C++6 Box</span>
+                            <span class="main-container-skill-hwidget-card-description">C++6 Box</span>
+    
+                        </div>
+                        <div class="main-container-skill-hwidget-card">
+                            <canvas class="main-container-skill-hwidget-card-arc">5</canvas>
+                            <span class="main-container-skill-hwidget-card-label">C++7 Box</span>
+                            <span class="main-container-skill-hwidget-card-description">C++7 Box</span>
+    
+                        </div>
+                        <div class="main-container-skill-hwidget-card">
+                            <canvas class="main-container-skill-hwidget-card-arc">4</canvas>
+                            <span class="main-container-skill-hwidget-card-label">C++8 Box</span>
+                            <span class="main-container-skill-hwidget-card-description">C++8 Box</span>
+    
+                        </div>
+                        <div class="main-container-skill-hwidget-card">
+                            <canvas class="main-container-skill-hwidget-card-arc">7</canvas>
+                            <span class="main-container-skill-hwidget-card-label">C++9 Box</span>
+                            <span class="main-container-skill-hwidget-card-description">C++9 Box</span>
+    
+                        </div>
+                    </div>
+                    <div class="main-container-skill-hwidget-rbutton" onclick="skillScrollRight()">
+                        <i class="main-container-skill-hwidget-rbutton-icon fa fa-angle-right fa-3x"></i>
+                    </div>
+                </div>
             </div>
-            <div class="main-container-section">
-                <div style="font-size: 5vw;">
-					Page Under Construction
-				</div> 
+            <div class="main-container-skill-container">
+                <span class="main-container-skill-container-title">Databases Skills</span>
+                <div class="main-container-skill-hwidget">
+                    <div class="main-container-skill-hwidget-lbutton" onclick="skillScrollLeft()">
+                        <i class="main-container-skill-hwidget-lbutton-icon fa fa-angle-left fa-3x"></i>
+                    </div>
+                    <div class="main-container-skill-hwidget-card-container">   
+                        <div class="main-container-skill-hwidget-card">
+                            <canvas class="main-container-skill-hwidget-card-arc">4</canvas>
+                            <span class="main-container-skill-hwidget-card-label">C++1 Box</span>
+                            <span class="main-container-skill-hwidget-card-description">C++1 Box</span>
+    
+                        </div>
+                        <div class="main-container-skill-hwidget-card">
+                            <canvas class="main-container-skill-hwidget-card-arc">10</canvas>
+                            <span class="main-container-skill-hwidget-card-label">C++2 Box</span>
+                            <span class="main-container-skill-hwidget-card-description">C++2 Box</span>
+    
+                        </div>
+                        <div class="main-container-skill-hwidget-card">
+                            <canvas class="main-container-skill-hwidget-card-arc">5</canvas>
+                            <span class="main-container-skill-hwidget-card-label">C++3 Box</span>
+                            <span class="main-container-skill-hwidget-card-description">C++3 Box</span>
+    
+                        </div>
+                    </div>
+                    <div class="main-container-skill-hwidget-rbutton" onclick="skillScrollRight()">
+                        <i class="main-container-skill-hwidget-rbutton-icon fa fa-angle-right fa-3x"></i>
+                    </div>
+                </div>
             </div>
-            <div class="main-container-section">
-                <div style="font-size: 5vw;">
-					Page Under Construction
-				</div> 
-            </div>
-		</main>
-		<footer>
+        </div>
+        <div class="main-container-project" id="project">
+            <span>Project</span> 
+        </div>
 
-		</footer>
-	</body>
+        <div class="main-container-experience" id="exp">
+            <span>Experience</span> 
+        </div>
+
+        <div class="main-container-achieve" id="achieve">
+            <span>Achievements</span> 
+        </div>
+
+        <div class="main-container-contact" id="contact">
+            <span>Contact</span> 
+        </div>
+
+    </div>
+</body>
+
+<script src="./main.js"></script>
 </html>
