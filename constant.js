@@ -7,6 +7,7 @@ const myskills={
     // "CP Lang":{
     "":{
         "Python":{
+            "key":"Python",
             "label":"Python",
             "rate":4,
             "scale":5,
@@ -17,6 +18,7 @@ const myskills={
             "description":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, tenetur tempora! Fugiat amets explicabo. Cupiditate, praesentium.",
         },
         "C++":{
+            "key":"C++",
             "label":"C++",
             "rate":3,
             "scale":5,
@@ -27,6 +29,7 @@ const myskills={
             "description":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, tenetur tempora! Fugiat amets explicabo. Cupiditate, praesentium.",
         },
         "C":{
+            "key":"C",
             "label":"C",
             "rate":3,
             "scale":5,
@@ -37,6 +40,7 @@ const myskills={
             "description":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, tenetur tempora! Fugiat amets explicabo. Cupiditate, praesentium.",
         },
         "Java":{
+            "key":"Java",
             "label":"Java",
             "rate":2,
             "scale":5,
@@ -49,6 +53,7 @@ const myskills={
     // },
     // "Web Dev Tools":{
         "HTML":{
+            "key":"HTML",
             "label":"HTML",
             "rate":3,
             "scale":5,
@@ -59,6 +64,7 @@ const myskills={
             "description":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, tenetur tempora! Fugiat amets explicabo. Cupiditate, praesentium.",
         },
         "CSS":{
+            "key":"CSS",
             "label":"CSS",
             "rate":3,
             "scale":5,
@@ -69,6 +75,7 @@ const myskills={
             "description":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, tenetur tempora! Fugiat amets explicabo. Cupiditate, praesentium.",
         },
         "JavaScript":{
+            "key":"JavaScript",
             "label":"JavaScript",
             "rate":2,
             "scale":5,
@@ -81,6 +88,7 @@ const myskills={
     // },
     // "FrameWorks/Libraries":{
         "Keras":{
+            "key":"Keras",
             "label":"Keras",
             "rate":3,
             "scale":5,
@@ -91,6 +99,7 @@ const myskills={
             "description":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, tenetur tempora! Fugiat amets explicabo. Cupiditate, praesentium.",
         },
         "OpenGL":{
+            "key":"OpenGL",
             "label":"OpenGL",
             "rate":3,
             "scale":5,
@@ -101,6 +110,7 @@ const myskills={
             "description":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, tenetur tempora! Fugiat amets explicabo. Cupiditate, praesentium.",
         },
         "OpenCV":{
+            "key":"OpenCV",
             "label":"OpenCV",
             "rate":3,
             "scale":5,
@@ -111,6 +121,7 @@ const myskills={
             "description":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, tenetur tempora! Fugiat amets explicabo. Cupiditate, praesentium.",
         },
         "jquery":{
+            "key":"jquery",
             "label":"JQuery",
             "rate":3,
             "scale":5,
@@ -121,6 +132,7 @@ const myskills={
             "description":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, tenetur tempora! Fugiat amets explicabo. Cupiditate, praesentium.",
         },
         "Ajax":{
+            "key":"Ajax",
             "label":"Ajax",
             "rate":3,
             "scale":5,
@@ -130,7 +142,8 @@ const myskills={
             },
             "description":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, tenetur tempora! Fugiat amets explicabo. Cupiditate, praesentium.",
         },
-        "BootStrap FrameWork":{
+        "BootStrap-FrameWork":{
+            "key":"BootStrap-FrameWork",
             "label":"BootStrap FrameWork",
             "rate":2,
             "scale":5,
@@ -140,8 +153,9 @@ const myskills={
             },
             "description":"BootStrap is CSS Framework Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, tenetur tempora! Fugiat ams explicabo. Cupiditate, praesentium.",
         },
-        "Expressjs FrameWork":{
-            "label":"Expressjs",
+        "Expressjs-FrameWork":{
+            "key":"Expressjs-FrameWork",
+            "label":"Expressjs FrameWork",
             "rate":2,
             "scale":5,
             "img":{
@@ -150,7 +164,8 @@ const myskills={
             },
             "description":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, tenetur tempora! Fugiat amets explicabo. Cupiditate, praesentium.",
         },
-        "Spring FrameWork":{
+        "Spring-FrameWork":{
+            "key":"Spring-FrameWork",
             "label":"Spring FrameWork",
             "rate":2,
             "scale":5,
@@ -160,7 +175,8 @@ const myskills={
             },
             "description":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, tenetur tempora! Fugiat amets explicabo. Cupiditate, praesentium.",
         },
-        "Play FrameWork":{
+        "Play-FrameWork":{
+            "key":"Play-FrameWork",
             "label":"Play FrameWork",
             "rate":2,
             "scale":5,
@@ -170,7 +186,8 @@ const myskills={
             },
             "description":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, tenetur tempora! Fugiat amets explicabo. Cupiditate, praesentium.",
         },
-        "Flask FrameWork":{
+        "Flask-FrameWork":{
+            "key":"Flask-FrameWork",
             "label":"Flask FrameWork",
             "rate":2,
             "scale":5,
@@ -181,6 +198,7 @@ const myskills={
             "description":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, tenetur tempora! Fugiat amets explicabo. Cupiditate, praesentium.",
         },
         "Nodejs":{
+            "key":"Nodejs",
             "label":"Nodejs",
             "rate":3,
             "scale":5,
@@ -193,6 +211,7 @@ const myskills={
     // },
     // "Database":{
         "MYSQL":{
+            "key":"MYSQL",
             "label":"MYSQL",
             "rate":4,
             "scale":5,
@@ -203,6 +222,7 @@ const myskills={
             "description":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, tenetur tempora! Fugiat amets explicabo. Cupiditate, praesentium.",
         },
         "Cassandra":{
+            "key":"Cassandra",
             "label":"Cassandra",
             "rate":3,
             "scale":5,
@@ -213,6 +233,7 @@ const myskills={
             "description":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, tenetur tempora! Fugiat amets explicabo. Cupiditate, praesentium.",
         },
         "Postgres":{
+            "key":"Postgres",
             "label":"PostGreSql",
             "rate":3,
             "scale":5,
@@ -225,6 +246,7 @@ const myskills={
     // },
     // "Softwares/Tools":{
         "ShellScript":{
+            "key":"ShellScript",
             "label":"Shell Scripting",
             "rate":5,
             "scale":5,
@@ -235,6 +257,7 @@ const myskills={
             "description":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, tenetur tempora! Fugiat amets explicabo. Cupiditate, praesentium.",
         },
         "Maven":{
+            "key":"Maven",
             "label":"Maven",
             "rate":5,
             "scale":5,
@@ -245,6 +268,7 @@ const myskills={
             "description":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, tenetur tempora! Fugiat amets explicabo. Cupiditate, praesentium.",
         },
         "VS Code":{
+            "key":"VS Code",
             "label":"VS Code",
             "rate":5,
             "scale":5,
@@ -255,6 +279,7 @@ const myskills={
             "description":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, tenetur tempora! Fugiat amets explicabo. Cupiditate, praesentium.",
         },
         "Postman":{
+            "key":"Postman",
             "label":"Postman",
             "rate":2.5,
             "scale":5,
@@ -265,6 +290,7 @@ const myskills={
             "description":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, tenetur tempora! Fugiat amets explicabo. Cupiditate, praesentium.",
         },
         "AdobeXD":{
+            "key":"AdobeXD",
             "label":"AdobeXD",
             "rate":4,
             "scale":5,
@@ -275,6 +301,7 @@ const myskills={
             "description":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, tenetur tempora! Fugiat amets explicabo. Cupiditate, praesentium.",
         },
         "Figma":{
+            "key":"Figma",
             "label":"Figma",
             "rate":4,
             "scale":5,
@@ -285,6 +312,7 @@ const myskills={
             "description":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, tenetur tempora! Fugiat amets explicabo. Cupiditate, praesentium.",
         },
         "Arduino":{
+            "key":"Arduino",
             "label":"Arduino UNO",
             "rate":2.5,
             "scale":5,
@@ -312,9 +340,35 @@ const myprojects=[
                 "url":undefined,
             },
         ],
+        "date":"Nov 2018 - Dec 2018",
         "skills":[
             myskills[""]["C"],
             myskills[""]["Arduino"],
+        ],
+    },
+    {
+        "title":"Website Hosting Server",
+        "url":[
+            {
+                "link-text":"Github Repo (Java)",
+                "link":"https://github.com/ArindamSharma/Basic_server",
+            },
+            {
+                "link-text":"Github Repo (C)",
+                "link":"https://github.com/ArindamSharma/Webserver",
+            },
+        ],
+        "description":"It can Host a website in particular Domain if the end user uploads the file required (in some specific format) to host the page .with the help of Socket Programming. and using multithreading it can run multiple request simultaneously.",
+        "img":[
+            {
+                "alt":"N/A",
+                "url":undefined,
+            },
+        ],
+        "date":"Sep 2019 - Nov 2019",
+        "skills":[
+            myskills[""]["Java"],
+            myskills[""]["C"],
         ],
     },
     {
@@ -332,14 +386,16 @@ const myprojects=[
                 "url":undefined,
             },
         ],
+        "date":"Nov 2018 - Dec 2018",
         "skills":[
             myskills[""]["Python"],
-            myskills[""]["Flask FrameWork"],
+            myskills[""]["Flask-FrameWork"],
             myskills[""]["HTML"],
             myskills[""]["CSS"],
             myskills[""]["JavaScript"],
             myskills[""]["jquery"],
             myskills[""]["Ajax"],
+            myskills[""]["MYSQL"],
         ],
     },
     {
@@ -357,6 +413,7 @@ const myprojects=[
                 "url":undefined,
             },
         ],
+        "date":"Feb 2020 - Mar 2020",
         "skills":[
             myskills[""]["Python"],
             myskills[""]["OpenCV"],
@@ -378,6 +435,7 @@ const myprojects=[
                 "url":undefined,
             },
         ],
+        "date":"July 2020 - Dec 2020",
         "skills":[
             myskills[""]["C"],
             myskills[""]["C++"],
@@ -403,6 +461,7 @@ const myprojects=[
                 "url":undefined,
             },
         ],
+        "date":"July 2020 - Dec 2020",
         "skills":[
             myskills[""]["C"],
             myskills[""]["C++"],
@@ -424,6 +483,7 @@ const myprojects=[
                 "url":undefined,
             },
         ],
+        "date":"July 2020 - Dec 2020",
         "skills":[
             myskills[""]["Figma"],
             myskills[""]["AdobeXD"],
@@ -448,15 +508,16 @@ const myexp=[
                 "url":undefined,
             },
         ],
+        "date":"May 2021- Nov 2021",
         "skills":[
             myskills[""]["Java"],
             myskills[""]["Cassandra"],
             myskills[""]["MYSQL"],
             myskills[""]["Postgres"],
-            myskills[""]["Play Framework"],
+            myskills[""]["Play-Framework"],
             myskills[""]["Nodejs"],
             myskills[""]["Maven"],
-            myskills[""]["Spring FrameWork"]
+            myskills[""]["Spring-FrameWork"]
         ],
     },
     {
@@ -476,13 +537,14 @@ const myexp=[
                 "url":undefined,
             },
         ],
+        "date":"July 2020 - Sep 2020",
         "skills":[
             myskills[""]["Nodejs"],
             myskills[""]["HTML"],
             myskills[""]["CSS"],
             myskills[""]["JavaScript"],
-            myskills[""]["Expressjs FrameWork"],
-            myskills[""]["BootStrap FrameWork"],
+            myskills[""]["Expressjs-FrameWork"],
+            myskills[""]["BootStrap-FrameWork"],
         ],
     },
     {
@@ -502,12 +564,13 @@ const myexp=[
                 "url":undefined,
             },
         ],
+        "date":"Sep 2018 - Dec 2018",
         "skills":[
             myskills[""]["Python"],
             myskills[""]["HTML"],
             myskills[""]["CSS"],
             myskills[""]["JavaScript"],
-            myskills[""]["Flask FrameWork"],
+            myskills[""]["Flask-FrameWork"],
             myskills[""]["jquery"],
             myskills[""]["Ajax"],
         ],

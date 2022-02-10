@@ -143,6 +143,7 @@ function loadSkillToHTML(){
 
             var hwidget_card=document.createElement("div");
             hwidget_card.classList.add("main-container-skill-hwidget-card");
+            hwidget_card.setAttribute("id",myskills[skillcat][pskill]["key"]);
             
             var canavas=document.createElement("canvas");
             canavas.classList.add("main-container-skill-hwidget-card-arc");
@@ -210,6 +211,10 @@ function loadProjectToHTML(){
         textcontainerdescription.classList.add("main-container-projectbox-element-textcontainer-description");
         textcontainerdescription.innerHTML=project["description"];
 
+        var textcontainerdate=document.createElement("span");
+        textcontainerdate.classList.add("main-container-projectbox-element-textcontainer-date");
+        textcontainerdate.innerHTML=project["date"];
+
         var textcontainerlinkbox=document.createElement("div");
         textcontainerlinkbox.classList.add("main-container-projectbox-element-textcontainer-linkbox");
         for (const link of project["url"]) {
@@ -231,6 +236,10 @@ function loadProjectToHTML(){
         textcontainerskillbox.appendChild(textcontainerskillboxlabel);
         // console.log(project["skills"]);
         for (const skill of project["skills"]) {
+            var textcontainerskilllink=document.createElement("a");
+            textcontainerskilllink.classList.add("main-container-projectbox-element-textcontainer-skill-link");
+            
+            textcontainerskilllink.setAttribute("href","#"+skill["key"]);
             var textcontainerskillimg=document.createElement("img");
             textcontainerskillimg.classList.add("main-container-projectbox-element-textcontainer-skill-img");
             
@@ -238,11 +247,13 @@ function loadProjectToHTML(){
             textcontainerskillimg.setAttribute("src",skill["img"]["url"]);
 
             textcontainerskillimg.setAttribute("alt",skill["img"]["alt"]);
-
-            textcontainerskillbox.appendChild(textcontainerskillimg);
+            
+            textcontainerskilllink.appendChild(textcontainerskillimg);
+            textcontainerskillbox.appendChild(textcontainerskilllink);
         }
 
         projecttextcontainer.appendChild(textcontainertitle);
+        projecttextcontainer.appendChild(textcontainerdate);
         projecttextcontainer.appendChild(textcontainerdescription);
         projecttextcontainer.appendChild(textcontainerlinkbox);
         projecttextcontainer.appendChild(textcontainerskillbox);
@@ -256,6 +267,12 @@ function loadProjectToHTML(){
 }
 function loadExpToHTML(){
     var expElementDiv=document.getElementById("exp");
+    var expBox=document.createElement("div");
+    expBox.classList.add("main-container-expbox");
+
+
+
+    expElementDiv.appendChild(expBox);
 }
 function loadAchievementToHTML(){
     var achieveElementDiv=document.getElementById("achieve");

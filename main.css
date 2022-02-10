@@ -308,6 +308,7 @@ html{
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-bottom: 40px;
 }
 .main-container-projectbox-elementbox{
     margin: 1vw;
@@ -353,6 +354,9 @@ html{
     text-align: inherit;
     max-width: 30vw;
 }
+.main-container-projectbox-element-textcontainer-date{
+    /* text-align: inherit; */
+}
 .main-container-projectbox-element-textcontainer-linkbox{
     display: flex;
     flex-direction: row;
@@ -376,20 +380,42 @@ html{
     font-weight: 600;
     padding: 10px;
 }
-.main-container-projectbox-element-textcontainer-skill-img{
-    height: 30px;
+.main-container-projectbox-element-textcontainer-skill-link{
+    text-decoration: none;
     padding: 10px;
 }
-
+.main-container-projectbox-element-textcontainer-skill-img{
+    height: 30px;
+}
 
 /* Experience Container */
 .main-container-experience{
-    /* background-color: rgb(145, 177, 168);
-    box-shadow: 0px -10px 10px #9494947e; */
+    background-color: rgb(92, 92, 92);
+    /* box-shadow: 0px -10px 10px #9494947e; */
     padding-right: 3vw;
     padding-left: calc(6.5rem + 5vw);
     padding-top: 5rem;
 }
+.main-container-experience>span{
+    color: rgb(206, 206, 206);
+}
+.main-container-expbox{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.main-container-expcard{
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
 /* Achievement Container */
 .main-container-achieve{
     /* background-color: rgb(145, 177, 168);
@@ -414,19 +440,20 @@ html{
 .main-container-contact-box{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: rgb(255, 255, 255);
-    height: 300px;
+    /* height: 300px; */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-bottom: 20px;
 }
 .main-container-contact-box-labelbox-container{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 .main-container-contact-box-labelbox{
     width: 100px;
@@ -452,6 +479,6 @@ html{
 .main-container-contact-box-labelbox-text{
 }
 .main-container-contact-box-message{
-    color: rgb(180, 180, 180);
+    color: rgb(236, 236, 236);
     font-size: larger;
 }
