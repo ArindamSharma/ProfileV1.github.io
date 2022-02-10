@@ -23,12 +23,12 @@
                 <div class="navbar-top-menu-toggle-icon-line"></div>
                 <div class="navbar-top-menu-toggle-icon-line"></div>
             </div>
-            <form class="navbar-top-searchbox">
+            <div class="navbar-top-searchbox">
                 <input class="navbar-top-searchbox-input" type="text" placeholder="Search">
-                <button class="navbar-top-searchbox-button" type="submit">
+                <button class="navbar-top-searchbox-button" onclick="searchSubmit()">
                     <i class="fa fa-search fa-lg" aria-hidden="true"></i>
                 </button>
-            </form>
+            </div>
         </div>
         <div class="navbar-left">
             <div class="navbar-left-menu-item">
@@ -74,206 +74,103 @@
             <span class="main-container-home-brand">Arindam Sharma</span>
             <div class="main-container-home-content">
                 <div class="main-container-home-content-text">
-                    <span class="main-container-home-content-text-h1">Enthusiast Learner</span>
+                    <span class="main-container-home-content-text-h1 main-container-title">Enthusiast Learner</span>
                     <p class="main-container-home-content-text-p">I am a 5th year Computer Science Student @IIITDM Kancheepuram.I am interested in Build tools and applications ,learning new Technologies,language ..etc. I am a fast learner. </p>
                 </div>
-                <img class="main-container-home-content-image" src="./img/me.png" alt="Me" srcset="">
+                <img class="main-container-home-content-image" src="./pimg/me.png" alt="Me" srcset="">
             </div>
         </div>
         <div class="main-container-skill" id="skills">
-            <span class="main-container-skill-title">Skills</span>
+            <span class="main-container-title">Skills</span>
             <!-- <div class="main-container-skill-container">
-                <span class="main-container-skill-container-title">CP Language</span>
+                <span class="main-container-skill-container-title"></span>
                 <div class="main-container-skill-hwidget">
-                    <div class="main-container-skill-hwidget-lbutton" onclick="skillScrollLeft()">
+                    <div class="main-container-skill-hwidget-button" onclick="skillScrollLeft(this)">
                         <i class="fa fa-angle-left fa-3x"></i>
                     </div>
                     <div class="main-container-skill-hwidget-card-container">
                         <div class="main-container-skill-hwidget-card">
-                            <canvas class="main-container-skill-hwidget-card-arc">3</canvas>
-                            <span class="main-container-skill-hwidget-card-label">C++0 Box</span>
-                            <span class="main-container-skill-hwidget-card-description">C++0 Box</span>
-    
-                        </div>
-                        <div class="main-container-skill-hwidget-card">
-                            <canvas class="main-container-skill-hwidget-card-arc">4</canvas>
-                            <span class="main-container-skill-hwidget-card-label">C++1 Box</span>
-                            <span class="main-container-skill-hwidget-card-description">C++1 Box</span>
-    
-                        </div>
-                        <div class="main-container-skill-hwidget-card">
-                            <canvas class="main-container-skill-hwidget-card-arc">10</canvas>
-                            <span class="main-container-skill-hwidget-card-label">C++2 Box</span>
-                            <span class="main-container-skill-hwidget-card-description">C++2 Box</span>
-    
-                        </div>
-                        <div class="main-container-skill-hwidget-card">
-                            <canvas class="main-container-skill-hwidget-card-arc">5</canvas>
-                            <span class="main-container-skill-hwidget-card-label">C++3 Box</span>
-                            <span class="main-container-skill-hwidget-card-description">C++3 Box</span>
-    
-                        </div>
-                        <div class="main-container-skill-hwidget-card">
-                            <canvas class="main-container-skill-hwidget-card-arc">5</canvas>
-                            <span class="main-container-skill-hwidget-card-label">C++4 Box</span>
-                            <span class="main-container-skill-hwidget-card-description">C++4 Box</span>
-    
-                        </div>
-                        <div class="main-container-skill-hwidget-card">
-                            <canvas class="main-container-skill-hwidget-card-arc">6</canvas>
-                            <span class="main-container-skill-hwidget-card-label">C++5 Box</span>
-                            <span class="main-container-skill-hwidget-card-description">C++5 Box</span>
-    
-                        </div>
-                        <div class="main-container-skill-hwidget-card">
-                            <canvas class="main-container-skill-hwidget-card-arc">6</canvas>
-                            <span class="main-container-skill-hwidget-card-label">C++6 Box</span>
-                            <span class="main-container-skill-hwidget-card-description">C++6 Box</span>
-    
-                        </div>
-                        <div class="main-container-skill-hwidget-card">
-                            <canvas class="main-container-skill-hwidget-card-arc">5</canvas>
-                            <span class="main-container-skill-hwidget-card-label">C++7 Box</span>
-                            <span class="main-container-skill-hwidget-card-description">C++7 Box</span>
-    
-                        </div>
-                        <div class="main-container-skill-hwidget-card">
-                            <canvas class="main-container-skill-hwidget-card-arc">4</canvas>
-                            <span class="main-container-skill-hwidget-card-label">C++8 Box</span>
-                            <span class="main-container-skill-hwidget-card-description">C++8 Box</span>
-    
-                        </div>
-                        <div class="main-container-skill-hwidget-card">
-                            <canvas class="main-container-skill-hwidget-card-arc">7</canvas>
-                            <span class="main-container-skill-hwidget-card-label">C++9 Box</span>
-                            <span class="main-container-skill-hwidget-card-description">C++9 Box</span>
-    
+                            <canvas class="main-container-skill-hwidget-card-arc"></canvas>
+                            <div class="main-container-skill-hwidget-card-labelbox">
+                                <img class="main-container-skill-hwidget-card-labelbox-img" alt="N/A" src="https://raw.githubusercontent.com/ArindamSharma/ArindamSharma/main/img/skill/python.png">
+                                <span class="main-container-skill-hwidget-card-labelbox-text">Python</span>
+                            </div>
+                            <span class="main-container-skill-hwidget-card-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, tenetur tempora! Fugiat amets explicabo. Cupiditate, praesentium.</span>
                         </div>
                     </div>
-                    <div class="main-container-skill-hwidget-rbutton" onclick="skillScrollRight()">
-                        <i class="fa fa-angle-right fa-3x"></i>
-                    </div>
-                </div>
-            </div>
-            <div class="main-container-skill-container">
-                <span class="main-container-skill-container-title">Web Dev Skills</span>
-                <div class="main-container-skill-hwidget">
-                    <div class="main-container-skill-hwidget-lbutton" onclick="skillScrollLeft()">
-                        <i class="fa fa-angle-left fa-3x"></i>
-                    </div>
-                    <div class="main-container-skill-hwidget-card-container">
-                        <div class="main-container-skill-hwidget-card">
-                            <canvas class="main-container-skill-hwidget-card-arc">3</canvas>
-                            <span class="main-container-skill-hwidget-card-label">C++0 Box</span>
-                            <span class="main-container-skill-hwidget-card-description">C++0 Box</span>
-    
-                        </div>
-                        <div class="main-container-skill-hwidget-card">
-                            <canvas class="main-container-skill-hwidget-card-arc">4</canvas>
-                            <span class="main-container-skill-hwidget-card-label">C++1 Box</span>
-                            <span class="main-container-skill-hwidget-card-description">C++1 Box</span>
-    
-                        </div>
-                        <div class="main-container-skill-hwidget-card">
-                            <canvas class="main-container-skill-hwidget-card-arc">10</canvas>
-                            <span class="main-container-skill-hwidget-card-label">C++2 Box</span>
-                            <span class="main-container-skill-hwidget-card-description">C++2 Box</span>
-    
-                        </div>
-                        <div class="main-container-skill-hwidget-card">
-                            <canvas class="main-container-skill-hwidget-card-arc">5</canvas>
-                            <span class="main-container-skill-hwidget-card-label">C++3 Box</span>
-                            <span class="main-container-skill-hwidget-card-description">C++3 Box</span>
-    
-                        </div>
-                        <div class="main-container-skill-hwidget-card">
-                            <canvas class="main-container-skill-hwidget-card-arc">5</canvas>
-                            <span class="main-container-skill-hwidget-card-label">C++4 Box</span>
-                            <span class="main-container-skill-hwidget-card-description">C++4 Box</span>
-    
-                        </div>
-                        <div class="main-container-skill-hwidget-card">
-                            <canvas class="main-container-skill-hwidget-card-arc">6</canvas>
-                            <span class="main-container-skill-hwidget-card-label">C++5 Box</span>
-                            <span class="main-container-skill-hwidget-card-description">C++5 Box</span>
-    
-                        </div>
-                        <div class="main-container-skill-hwidget-card">
-                            <canvas class="main-container-skill-hwidget-card-arc">6</canvas>
-                            <span class="main-container-skill-hwidget-card-label">C++6 Box</span>
-                            <span class="main-container-skill-hwidget-card-description">C++6 Box</span>
-    
-                        </div>
-                        <div class="main-container-skill-hwidget-card">
-                            <canvas class="main-container-skill-hwidget-card-arc">5</canvas>
-                            <span class="main-container-skill-hwidget-card-label">C++7 Box</span>
-                            <span class="main-container-skill-hwidget-card-description">C++7 Box</span>
-    
-                        </div>
-                        <div class="main-container-skill-hwidget-card">
-                            <canvas class="main-container-skill-hwidget-card-arc">4</canvas>
-                            <span class="main-container-skill-hwidget-card-label">C++8 Box</span>
-                            <span class="main-container-skill-hwidget-card-description">C++8 Box</span>
-    
-                        </div>
-                        <div class="main-container-skill-hwidget-card">
-                            <canvas class="main-container-skill-hwidget-card-arc">7</canvas>
-                            <span class="main-container-skill-hwidget-card-label">C++9 Box</span>
-                            <span class="main-container-skill-hwidget-card-description">C++9 Box</span>
-    
-                        </div>
-                    </div>
-                    <div class="main-container-skill-hwidget-rbutton" onclick="skillScrollRight()">
-                        <i class="fa fa-angle-right fa-3x"></i>
-                    </div>
-                </div>
-            </div>
-            <div class="main-container-skill-container">
-                <span class="main-container-skill-container-title">Databases Skills</span>
-                <div class="main-container-skill-hwidget">
-                    <div class="main-container-skill-hwidget-lbutton" onclick="skillScrollLeft()">
-                        <i class="fa fa-angle-left fa-3x"></i>
-                    </div>
-                    <div class="main-container-skill-hwidget-card-container">
-                        <div class="main-container-skill-hwidget-card">
-                            <canvas class="main-container-skill-hwidget-card-arc">4</canvas>
-                            <span class="main-container-skill-hwidget-card-label">C++1 Box</span>
-                            <span class="main-container-skill-hwidget-card-description">C++1 Box</span>
-    
-                        </div>
-                        <div class="main-container-skill-hwidget-card">
-                            <canvas class="main-container-skill-hwidget-card-arc">10</canvas>
-                            <span class="main-container-skill-hwidget-card-label">C++2 Box</span>
-                            <span class="main-container-skill-hwidget-card-description">C++2 Box</span>
-    
-                        </div>
-                        <div class="main-container-skill-hwidget-card">
-                            <canvas class="main-container-skill-hwidget-card-arc">5</canvas>
-                            <span class="main-container-skill-hwidget-card-label">C++3 Box</span>
-                            <span class="main-container-skill-hwidget-card-description">C++3 Box</span>
-    
-                        </div>
-                    </div>
-                    <div class="main-container-skill-hwidget-rbutton" onclick="skillScrollRight()">
+                    <div class="main-container-skill-hwidget-button" onclick="skillScrollRight(this)">
                         <i class="fa fa-angle-right fa-3x"></i>
                     </div>
                 </div>
             </div> -->
         </div>
         <div class="main-container-project" id="project">
-            <span>Project</span> 
+            <span class="main-container-title">Project</span> 
+            <!-- <div class="main-container-projectbox">
+
+                <div class="main-container-projectbox-elementbox">
+                    <img class="main-container-projectbox-element-img" src="non" alt="N/A" srcset="">
+                    <div class="main-container-projectbox-element-textcontainer">
+                        <span class="main-container-projectbox-element-textcontainer-title">helloworl asdsd asd a sd sd</span>
+                        <p class="main-container-projectbox-element-textcontainer-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio provident consectetur obcaecati dignissimos ad quasi nemo ducimus cum totam reprehenderit, enim veniam error facere tenetur ipsam quisquam consequuntur culpa repudiandae!</p>
+                        <div class="main-container-projectbox-element-textcontainer-linkbox">
+                            <a href="" class="main-container-projectbox-element-textcontainer-link">gitrepo</a>
+                            <a href="" class="main-container-projectbox-element-textcontainer-link">gitrepo2</a>
+                        </div>
+                        <div class="main-container-projectbox-element-textcontainer-skillbox">
+                            <span class="main-container-projectbox-element-textcontainer-skill-label">skills</span>
+                            <img class="main-container-projectbox-element-textcontainer-skill-img" src="" alt="N/A" srcset="">
+                            <img class="main-container-projectbox-element-textcontainer-skill-img" src="" alt="N/A" srcset="">
+                            <img class="main-container-projectbox-element-textcontainer-skill-img" src="" alt="N/A" srcset="">
+                            <img class="main-container-projectbox-element-textcontainer-skill-img" src="" alt="N/A" srcset="">
+                        </div>
+                    </div>
+                </div>
+
+            </div> -->
         </div>
 
         <div class="main-container-experience" id="exp">
-            <span>Experience</span> 
+            <span class="main-container-title">Experience</span> 
         </div>
 
         <div class="main-container-achieve" id="achieve">
-            <span>Achievements</span> 
+            <span class="main-container-title">Achievements</span> 
         </div>
 
         <div class="main-container-contact" id="contact">
-            <span>Contact</span> 
+            <!-- <span class="main-container-title">Contact</span>  -->
+            <div class="main-container-contact-box">
+                <span class="main-container-contact-box-message">Stay in Touch </span>
+                <span class="main-container-contact-box-message">Feel Free to Contact </span>
+                <div class="main-container-contact-box-labelbox-container">
+                    <a href="" class="main-container-contact-box-labelbox">
+                        <img class="main-container-contact-box-labelbox-img" src="./img/GitHub-Mark-Light-32px.png" alt="N/A" srcset="">
+                        <span class="main-container-contact-box-labelbox-text">Github</span>
+                    </a>
+                    <a href="" class="main-container-contact-box-labelbox">
+                        <img class="main-container-contact-box-labelbox-img" src="https://raw.githubusercontent.com/ArindamSharma/ArindamSharma/main/img/contact/linkedin.png" alt="N/A" srcset="">
+                        <span class="main-container-contact-box-labelbox-text">Linkedin</span>
+                    </a>
+                    <a href="" class="main-container-contact-box-labelbox">
+                        <img class="main-container-contact-box-labelbox-img" src="https://raw.githubusercontent.com/ArindamSharma/ArindamSharma/main/img/contact/gmail.png" alt="N/A" srcset="">
+                        <span class="main-container-contact-box-labelbox-text">Gmail</span>
+                    </a>
+                    <a href="" class="main-container-contact-box-labelbox">
+                        <img class="main-container-contact-box-labelbox-img" src="https://raw.githubusercontent.com/ArindamSharma/ArindamSharma/main/img/contact/insta.png" alt="N/A" srcset="">
+                        <span class="main-container-contact-box-labelbox-text">Instagram</span>
+                    </a>
+                    <a href="" class="main-container-contact-box-labelbox">
+                        <img class="main-container-contact-box-labelbox-img" src="https://raw.githubusercontent.com/ArindamSharma/ArindamSharma/main/img/contact/twitter.png" alt="N/A" srcset="">
+                        <span class="main-container-contact-box-labelbox-text">Twiter</span>
+                    </a>
+                    <a href="" class="main-container-contact-box-labelbox">
+                        <img class="main-container-contact-box-labelbox-img" src="https://raw.githubusercontent.com/ArindamSharma/ArindamSharma/main/img/contact/facebook.png" alt="N/A" srcset="">
+                        <span class="main-container-contact-box-labelbox-text">Facebook</span>
+                    </a>
+                </div>
+                <span class="main-container-contact-box-note">ArindamSharma @2022</span>
+            </div>
         </div>
 
     </div>

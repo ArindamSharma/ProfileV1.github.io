@@ -1,7 +1,41 @@
 function OnLoadFunctions(){
     loadSkillToHTML();
+    loadProjectToHTML();
+    // loadExpToHTML();
+    // loadAchievementToHTML();
+}
+window.onscroll=function(){
+    navbarBG();
 }
 
+function searchSubmit(){
+    let keyword=document.getElementsByClassName("navbar-top-searchbox-input")[0];
+    console.log(keyword.value);
+    console.log("Search Feature :: Working In Progress")
+    // var word = keyword,
+    //     queue = [document.body],
+    //     curr
+    // ;
+    // while (curr = queue.pop()) {
+    //     if (!curr.textContent.match(word)) continue;
+    //     for (var i = 0; i < curr.childNodes.length; ++i) {
+    //         switch (curr.childNodes[i].nodeType) {
+    //             case Node.TEXT_NODE : // 3
+    //                 if (curr.childNodes[i].textContent.match(word)) {
+    //                     console.log("Found!");
+    //                     console.log(curr);
+    //                     // you might want to end your search here.
+    //                     return undefined;
+    //                 }
+    //                 break;
+    //             case Node.ELEMENT_NODE : // 1
+    //                 queue.push(curr.childNodes[i]);
+    //                 break;
+    //         }
+    //     }
+    // }
+    // note :: after search is done then scrollintoview() method will scroll to that location
+}
 function OnClickMenuToggle(){
     menuToggle=document.getElementsByClassName("navbar-top-menu-toggle-icon")[0];
     
@@ -29,13 +63,13 @@ function OnClickMenuToggleOff(){
 }
 
 function skillScrollLeft(element){
-    document.getElementsByClassName("main-container-skill-hwidget-card-container")[0].scrollLeft -=500;
+    document.getElementsByClassName("main-container-skill-hwidget-card-container")[0].scrollLeft -=window.screen.width/3;
     // console.log(element.parentElement); 
 }
 
 function skillScrollRight(element){
     // console.log(element); 
-    document.getElementsByClassName("main-container-skill-hwidget-card-container")[0].scrollLeft +=500;
+    document.getElementsByClassName("main-container-skill-hwidget-card-container")[0].scrollLeft +=window.screen.width/3;
 }
 
 function arcLoad(classDiv,text,total){
@@ -83,7 +117,7 @@ function loadSkillToHTML(){
         hwidget.classList.add("main-container-skill-hwidget");
         
         var hwidget_lbutton=document.createElement("div");
-        hwidget_lbutton.classList.add("main-container-skill-hwidget-lbutton");
+        hwidget_lbutton.classList.add("main-container-skill-hwidget-button");
         hwidget_lbutton.setAttribute("onclick",'skillScrollLeft(this)');
         var lbtn_icon=document.createElement("i");
         lbtn_icon.classList.add("fa");
@@ -92,7 +126,7 @@ function loadSkillToHTML(){
         hwidget_lbutton.appendChild(lbtn_icon);
 
         var hwidget_rbutton=document.createElement("div");
-        hwidget_rbutton.classList.add("main-container-skill-hwidget-rbutton");
+        hwidget_rbutton.classList.add("main-container-skill-hwidget-button");
         hwidget_rbutton.setAttribute("onclick",'skillScrollRight(this)');
         var rbtn_icon=document.createElement("i");
         rbtn_icon.classList.add("fa");
@@ -127,7 +161,7 @@ function loadSkillToHTML(){
             
             var card_labelbox_text=document.createElement("span");
             card_labelbox_text.classList.add("main-container-skill-hwidget-card-labelbox-text");
-            card_labelbox_text.innerHTML=pskill;
+            card_labelbox_text.innerHTML=myskills[skillcat][pskill]["label"];
             card_labelbox.appendChild(card_labelbox_text);
 
 
@@ -150,8 +184,91 @@ function loadSkillToHTML(){
     }
 }
 
+function loadProjectToHTML(){
+    var projectElementDiv=document.getElementById("project");
+    var projectContainer=document.createElement("div");
+    projectContainer.classList.add("main-container-projectbox");
 
+    for (const project of myprojects) {
+        var projectElement=document.createElement("div");
+        projectElement.classList.add("main-container-projectbox-elementbox");
 
+        var projectimg=document.createElement("img");
+        projectimg.classList.add("main-container-projectbox-element-img");
+        // for now considering only 1 image
+        projectimg.setAttribute("src",project["img"][0]["url"]);
+        projectimg.setAttribute("alt",project["img"][0]["alt"]);
+
+        var projecttextcontainer=document.createElement("div");
+        projecttextcontainer.classList.add("main-container-projectbox-element-textcontainer");
+
+        var textcontainertitle=document.createElement("span");
+        textcontainertitle.classList.add("main-container-projectbox-element-textcontainer-title");
+        textcontainertitle.innerHTML=project["title"];
+
+        var textcontainerdescription=document.createElement("p");
+        textcontainerdescription.classList.add("main-container-projectbox-element-textcontainer-description");
+        textcontainerdescription.innerHTML=project["description"];
+
+        var textcontainerlinkbox=document.createElement("div");
+        textcontainerlinkbox.classList.add("main-container-projectbox-element-textcontainer-linkbox");
+        for (const link of project["url"]) {
+            if(link["link"]==undefined){continue;}
+            var textcontainerlink=document.createElement("a");
+            textcontainerlink.classList.add("main-container-projectbox-element-textcontainer-link");
+            textcontainerlink.setAttribute("href",link["link"]);
+            textcontainerlink.innerHTML=link["link-text"];
+
+            textcontainerlinkbox.appendChild(textcontainerlink);
+        }
+
+        var textcontainerskillbox=document.createElement("div");
+        textcontainerskillbox.classList.add("main-container-projectbox-element-textcontainer-skillbox");
+        var textcontainerskillboxlabel=document.createElement("span");
+        textcontainerskillboxlabel.classList.add("main-container-projectbox-element-textcontainer-skill-label");
+        textcontainerskillboxlabel.innerHTML="Skills : ";
+
+        textcontainerskillbox.appendChild(textcontainerskillboxlabel);
+        // console.log(project["skills"]);
+        for (const skill of project["skills"]) {
+            var textcontainerskillimg=document.createElement("img");
+            textcontainerskillimg.classList.add("main-container-projectbox-element-textcontainer-skill-img");
+            
+            // console.log("imgdetails :",skill["img"]["url"]);
+            textcontainerskillimg.setAttribute("src",skill["img"]["url"]);
+
+            textcontainerskillimg.setAttribute("alt",skill["img"]["alt"]);
+
+            textcontainerskillbox.appendChild(textcontainerskillimg);
+        }
+
+        projecttextcontainer.appendChild(textcontainertitle);
+        projecttextcontainer.appendChild(textcontainerdescription);
+        projecttextcontainer.appendChild(textcontainerlinkbox);
+        projecttextcontainer.appendChild(textcontainerskillbox);
+
+        projectElement.appendChild(projectimg);
+        projectElement.appendChild(projecttextcontainer);
+
+        projectContainer.appendChild(projectElement);
+    }
+    projectElementDiv.appendChild(projectContainer);
+}
+function loadExpToHTML(){
+    var expElementDiv=document.getElementById("exp");
+}
+function loadAchievementToHTML(){
+    var achieveElementDiv=document.getElementById("achieve");
+}
+function navbarBG(){
+    // console.log(window.scrollY);
+    if(window.scrollY>200){
+        document.getElementsByClassName("navbar-top")[0].classList.add("navbar-top-bg-toggle");
+    }
+    else{
+        document.getElementsByClassName("navbar-top")[0].classList.remove("navbar-top-bg-toggle");
+    }
+}
 // // for this to run the javascript file needs to be call at the last of html page
 // const slider = document.querySelector(".main-container-skill-hwidget-card-container");
 // console.log(slider);
