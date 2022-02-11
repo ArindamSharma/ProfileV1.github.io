@@ -154,8 +154,9 @@ html{
     /* font-family: 'Stalinist One', cursive; */
     font-family: 'Seymour One', sans-serif;
     color: rgb(95, 95, 95);
-    font-size: 2vw;
+    font-size: 40px;
     text-transform: capitalize;
+    margin-bottom: 10px;
     /* background-color: brown; */
 }
 
@@ -305,6 +306,7 @@ html{
     padding-top: 5rem;
 }
 .main-container-projectbox{
+    padding: 20px 10px 10px 10px ;
     display: flex;
     /* flex-direction: column; */
     flex-wrap: wrap;
@@ -313,7 +315,7 @@ html{
     padding-bottom: 40px;
 }
 .main-container-projectbox-elementbox{
-    min-width: 100px;
+    min-width: 350px;
     max-width: 25vw;
     margin: 1vw;
     display: flex;
@@ -335,6 +337,7 @@ html{
 }
 .main-container-projectbox-element-img{
     width: 25vw;
+    min-width: 350px;
     border-radius: inherit;
 }
 .main-container-projectbox-element-title{
@@ -413,6 +416,7 @@ html{
 }
 .main-container-expcard{
     max-width: 25vw;
+    min-width: 350px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -433,6 +437,8 @@ html{
 }
 .main-container-expcard-img{
     width: 25vw;
+    min-width: 350px;
+    min-height: 300px;
     height: 17vw;
     object-fit: cover;
     border-radius: 10px;
@@ -508,15 +514,18 @@ html{
 }
 .main-container-achieve-listitem-img{
     /* height: 20vw; */
+    border-radius: 10px;
     width:25vw;
     max-width: 300px;
     object-fit: cover;
+    padding: 2vw 0 2vw 2vw;
 }
 .main-container-achieve-listitem-innerbox{
     display: flex;
     flex-direction: column;
     justify-content: center;
     /* align-items: center; */
+    padding-left: 2vw;
 }
 .main-container-achieve-listitem-innerbox> * {
     padding: 10px;

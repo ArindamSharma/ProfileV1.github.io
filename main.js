@@ -1,5 +1,5 @@
 // Global Variables
-var menuToggle;
+var menuToggle=document.getElementsByClassName("navbar-top-menu-toggle-icon")[0];
 // var scrollLocation=window.scrollY;
 
 
@@ -42,7 +42,7 @@ function searchSubmit(){
     // note :: after search is done then scrollintoview() method will scroll to that location
 }
 function OnClickMenuToggle(){
-    menuToggle=document.getElementsByClassName("navbar-top-menu-toggle-icon")[0];
+    // menuToggle=document.getElementsByClassName("navbar-top-menu-toggle-icon")[0];
     
     console.log("MenuToggleMessage :: Clicked");
     var labels=document.getElementsByClassName("navbar-left-menu-item-link-label");

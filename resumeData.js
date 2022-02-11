@@ -334,7 +334,7 @@ const myprojects=[
         "img":[
             {
                 "alt":"N/A",
-                "url":undefined,
+                "url":"./img/samgatha.jpg",
             },
         ],
         "date":"Nov 2018 - Dec 2018",
@@ -477,7 +477,7 @@ const myprojects=[
         "img":[
             {
                 "alt":"N/A",
-                "url":undefined,
+                "url":"./img/fileexplorer.png",
             },
         ],
         "date":"July 2020 - Dec 2020",
@@ -487,7 +487,7 @@ const myprojects=[
         ],
     },
     {
-        "title":"For More Other Project ",
+        "title":"For Other More Project ",
         "url":[
             {
                 "link-text":"Github",
@@ -502,7 +502,7 @@ const myprojects=[
         "img":[
             {
                 "alt":"N/A",
-                "url":undefined,
+                "url":"./img/otherproject.jpg",
             },
         ],
         "date":"Follow The Links",
@@ -602,14 +602,18 @@ const myachievement=[
         "description":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat obcaecati dolores officiis repudiandae, voluptas pariatur quo tempora perferendis sed voluptates aperiam odio, illo, fugiat doloremque provident modi praesentium qui ea!",
         "url":[
             {
-                "link-text":"",
-                "link":undefined,
+                "link-text":"Facebook Page",
+                "link":"https://www.facebook.com/samgathaatiiitdm/",
+            },
+            {
+                "link-text":"Twitter Page",
+                "link":"https://twitter.com/samgatha?lang=en",
             },
         ],
         "img":[
             {
                 "alt":"N/A",
-                "url":undefined,
+                "url":"./img/samgatha.jpg",
             },
         ],
     },
