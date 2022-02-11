@@ -158,6 +158,7 @@ html{
     text-transform: capitalize;
     margin-bottom: 10px;
     /* background-color: brown; */
+    transition: all .5s;
 }
 
 
@@ -168,6 +169,7 @@ html{
     margin-left: 80px;
     margin-right: 3vw;
     padding-left: 5vw;
+    transition: all .5s;
     /* padding-top: 0rem; */
 }
 .main-container-home-brand{
@@ -184,6 +186,8 @@ html{
 }
 .main-container-home-content{
     display: flex;
+    flex-direction: row;
+    /* flex-wrap: wrap; */
 }
 .main-container-home-content-text{
     display: flex;
@@ -193,6 +197,7 @@ html{
 .main-container-home-content-image{
     z-index: -1;
     height: 30vw;
+    min-height: 250px;
     filter: drop-shadow(-3vw 10px 9px rgba(100, 100, 100, 0.89));
 }
 .main-container-home-content-text-h1{
@@ -201,7 +206,7 @@ html{
 .main-container-home-content-text-p{
     padding: 15px 15px 2vw 15px;
     margin-bottom: 25px;
-    font-size: 1.5vw;
+    font-size: 20px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -516,7 +521,7 @@ html{
     /* height: 20vw; */
     border-radius: 10px;
     width:25vw;
-    max-width: 300px;
+    min-width: 300px;
     object-fit: cover;
     padding: 2vw 0 2vw 2vw;
 }
@@ -611,4 +616,29 @@ html{
 .main-container-contact-box-message{
     color: rgb(236, 236, 236);
     font-size: larger;
+}
+
+@media only screen and (max-width: 600px) {
+    
+    .main-container-title{
+        font-size: 30px;
+    }
+}
+@media only screen and (max-width: 900px) {
+
+    .main-container-title{
+        font-size: 30px;
+    }
+    .main-container-home{
+        margin-top: 100px;
+    }
+    .main-container-home-brand{
+        top: unset;
+    }
+    .main-container-home-content{
+        /* display: flex; */
+        /* flex-direction: row; */
+        flex-wrap: wrap;
+        justify-content: flex-end;
+    }
 }

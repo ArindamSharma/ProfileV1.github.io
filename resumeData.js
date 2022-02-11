@@ -12,7 +12,7 @@ const myskills={
                 "alt":"N/A",
                 "url":"https://raw.githubusercontent.com/ArindamSharma/ArindamSharma/main/img/skill/python.png",
             },
-            "description":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, tenetur tempora! Fugiat amets explicabo. Cupiditate, praesentium.",
+            "description":"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore maxime aspernatur, reprehenderit rerum unde esse deserunt sint in numquam libero, facilis laudantium tempora alias sequi at eligendi possimus enim? Nulla?",
         },
         "C++":{
             "key":"C++",
@@ -23,7 +23,7 @@ const myskills={
                 "alt":"N/A",
                 "url":"https://raw.githubusercontent.com/ArindamSharma/ArindamSharma/main/img/skill/c++.png",
             },
-            "description":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, tenetur tempora! Fugiat amets explicabo. Cupiditate, praesentium.",
+            "description":"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore maxime aspernatur, reprehenderit rerum unde esse deserunt sint in numquam libero, facilis laudantium tempora alias sequi at eligendi possimus enim? Nulla?",
         },
         "C":{
             "key":"C",
@@ -34,7 +34,7 @@ const myskills={
                 "alt":"N/A",
                 "url":"https://raw.githubusercontent.com/ArindamSharma/ArindamSharma/main/img/skill/c.png",
             },
-            "description":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, tenetur tempora! Fugiat amets explicabo. Cupiditate, praesentium.",
+            "description":"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore maxime aspernatur, reprehenderit rerum unde esse deserunt sint in numquam libero, facilis laudantium tempora alias sequi at eligendi possimus enim? Nulla?",
         },
         "Java":{
             "key":"Java",
@@ -45,7 +45,7 @@ const myskills={
                 "alt":"N/A",
                 "url":"https://raw.githubusercontent.com/ArindamSharma/ArindamSharma/main/img/skill/java2.png",
             },
-            "description":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, tenetur tempora! Fugiat amets explicabo. Cupiditate, praesentium.",
+            "description":"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore maxime aspernatur, reprehenderit rerum unde esse deserunt sint in numquam libero, facilis laudantium tempora alias sequi at eligendi possimus enim? Nulla?",
         },
     // },
     // "Web Dev Tools":{
@@ -58,7 +58,7 @@ const myskills={
                 "alt":"N/A",
                 "url":"https://raw.githubusercontent.com/ArindamSharma/ArindamSharma/main/img/skill/html.png",
             },
-            "description":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, tenetur tempora! Fugiat amets explicabo. Cupiditate, praesentium.",
+            "description":"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore maxime aspernatur, reprehenderit rerum unde esse deserunt sint in numquam libero, facilis laudantium tempora alias sequi at eligendi possimus enim? Nulla?",
         },
         "CSS":{
             "key":"CSS",
@@ -69,7 +69,7 @@ const myskills={
                 "alt":"N/A",
                 "url":"https://raw.githubusercontent.com/ArindamSharma/ArindamSharma/main/img/skill/css.png",
             },
-            "description":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, tenetur tempora! Fugiat amets explicabo. Cupiditate, praesentium.",
+            "description":"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore maxime aspernatur, reprehenderit rerum unde esse deserunt sint in numquam libero, facilis laudantium tempora alias sequi at eligendi possimus enim? Nulla?",
         },
         "JavaScript":{
             "key":"JavaScript",
@@ -80,7 +80,7 @@ const myskills={
                 "alt":"N/A",
                 "url":"https://raw.githubusercontent.com/ArindamSharma/ArindamSharma/main/img/skill/javascript.png",
             },
-            "description":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, tenetur tempora! Fugiat amets explicabo. Cupiditate, praesentium.",
+            "description":"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore maxime aspernatur, reprehenderit rerum unde esse deserunt sint in numquam libero, facilis laudantium tempora alias sequi at eligendi possimus enim? Nulla?",
         },
     // },
     // "FrameWorks/Libraries":{
@@ -93,7 +93,7 @@ const myskills={
                 "alt":"N/A",
                 "url":"https://raw.githubusercontent.com/ArindamSharma/ArindamSharma/main/img/skill/opengl.png",
             },
-            "description":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, tenetur tempora! Fugiat amets explicabo. Cupiditate, praesentium.",
+            "description":"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore maxime aspernatur, reprehenderit rerum unde esse deserunt sint in numquam libero, facilis laudantium tempora alias sequi at eligendi possimus enim? Nulla?",
         },
         "OpenCV":{
             "key":"OpenCV",
@@ -104,7 +104,7 @@ const myskills={
                 "alt":"N/A",
                 "url":"https://raw.githubusercontent.com/ArindamSharma/ArindamSharma/main/img/skill/opencv.png",
             },
-            "description":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, tenetur tempora! Fugiat amets explicabo. Cupiditate, praesentium.",
+            "description":"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore maxime aspernatur, reprehenderit rerum unde esse deserunt sint in numquam libero, facilis laudantium tempora alias sequi at eligendi possimus enim? Nulla?",
         },
         "jquery":{
             "key":"jquery",
@@ -115,7 +115,7 @@ const myskills={
                 "alt":"N/A",
                 "url":"https://raw.githubusercontent.com/ArindamSharma/ArindamSharma/main/img/skill/jquery.png",
             },
-            "description":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, tenetur tempora! Fugiat amets explicabo. Cupiditate, praesentium.",
+            "description":"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore maxime aspernatur, reprehenderit rerum unde esse deserunt sint in numquam libero, facilis laudantium tempora alias sequi at eligendi possimus enim? Nulla?",
         },
         "Ajax":{
             "key":"Ajax",
@@ -126,7 +126,7 @@ const myskills={
                 "alt":"N/A",
                 "url":"https://raw.githubusercontent.com/ArindamSharma/ArindamSharma/main/img/skill/ajax2.png",
             },
-            "description":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, tenetur tempora! Fugiat amets explicabo. Cupiditate, praesentium.",
+            "description":"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore maxime aspernatur, reprehenderit rerum unde esse deserunt sint in numquam libero, facilis laudantium tempora alias sequi at eligendi possimus enim? Nulla?",
         },
         "BootStrap-FrameWork":{
             "key":"BootStrap-FrameWork",
@@ -137,7 +137,7 @@ const myskills={
                 "alt":"N/A",
                 "url":"https://raw.githubusercontent.com/ArindamSharma/ArindamSharma/main/img/skill/bootstrap.png",
             },
-            "description":"BootStrap is CSS Framework Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, tenetur tempora! Fugiat ams explicabo. Cupiditate, praesentium.",
+            "description":"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore maxime aspernatur, reprehenderit rerum unde esse deserunt sint in numquam libero, facilis laudantium tempora alias sequi at eligendi possimus enim? Nulla?",
         },
         "Expressjs-FrameWork":{
             "key":"Expressjs-FrameWork",
@@ -148,7 +148,7 @@ const myskills={
                 "alt":"N/A",
                 "url":"https://raw.githubusercontent.com/ArindamSharma/ArindamSharma/main/img/skill/expressjs.png",
             },
-            "description":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, tenetur tempora! Fugiat amets explicabo. Cupiditate, praesentium.",
+            "description":"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore maxime aspernatur, reprehenderit rerum unde esse deserunt sint in numquam libero, facilis laudantium tempora alias sequi at eligendi possimus enim? Nulla?",
         },
         "Spring-FrameWork":{
             "key":"Spring-FrameWork",
@@ -159,7 +159,7 @@ const myskills={
                 "alt":"N/A",
                 "url":"https://raw.githubusercontent.com/ArindamSharma/ArindamSharma/main/img/skill/spring.png",
             },
-            "description":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, tenetur tempora! Fugiat amets explicabo. Cupiditate, praesentium.",
+            "description":"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore maxime aspernatur, reprehenderit rerum unde esse deserunt sint in numquam libero, facilis laudantium tempora alias sequi at eligendi possimus enim? Nulla?",
         },
         "Play-FrameWork":{
             "key":"Play-FrameWork",
@@ -170,7 +170,7 @@ const myskills={
                 "alt":"N/A",
                 "url":"https://raw.githubusercontent.com/ArindamSharma/ArindamSharma/main/img/skill/play.png",
             },
-            "description":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, tenetur tempora! Fugiat amets explicabo. Cupiditate, praesentium.",
+            "description":"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore maxime aspernatur, reprehenderit rerum unde esse deserunt sint in numquam libero, facilis laudantium tempora alias sequi at eligendi possimus enim? Nulla?",
         },
         "Flask-FrameWork":{
             "key":"Flask-FrameWork",
@@ -181,7 +181,7 @@ const myskills={
                 "alt":"N/A",
                 "url":"https://raw.githubusercontent.com/ArindamSharma/ArindamSharma/main/img/skill/flask.png",
             },
-            "description":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, tenetur tempora! Fugiat amets explicabo. Cupiditate, praesentium.",
+            "description":"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore maxime aspernatur, reprehenderit rerum unde esse deserunt sint in numquam libero, facilis laudantium tempora alias sequi at eligendi possimus enim? Nulla?",
         },
         "Nodejs":{
             "key":"Nodejs",
@@ -192,7 +192,7 @@ const myskills={
                 "alt":"N/A",
                 "url":"https://raw.githubusercontent.com/ArindamSharma/ArindamSharma/main/img/skill/nodejs.png",
             },
-            "description":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, tenetur tempora! Fugiat amets explicabo. Cupiditate, praesentium.",
+            "description":"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore maxime aspernatur, reprehenderit rerum unde esse deserunt sint in numquam libero, facilis laudantium tempora alias sequi at eligendi possimus enim? Nulla?",
         },
         "Keras":{
             "key":"Keras",
@@ -203,7 +203,7 @@ const myskills={
                 "alt":"N/A",
                 "url":"https://raw.githubusercontent.com/ArindamSharma/ArindamSharma/main/img/skill/keras.png",
             },
-            "description":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, tenetur tempora! Fugiat amets explicabo. Cupiditate, praesentium.",
+            "description":"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore maxime aspernatur, reprehenderit rerum unde esse deserunt sint in numquam libero, facilis laudantium tempora alias sequi at eligendi possimus enim? Nulla?",
         },
     // },
     // "Database":{
@@ -216,7 +216,7 @@ const myskills={
                 "alt":"N/A",
                 "url":"https://raw.githubusercontent.com/ArindamSharma/ArindamSharma/main/img/skill/mysql.png",
             },
-            "description":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, tenetur tempora! Fugiat amets explicabo. Cupiditate, praesentium.",
+            "description":"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore maxime aspernatur, reprehenderit rerum unde esse deserunt sint in numquam libero, facilis laudantium tempora alias sequi at eligendi possimus enim? Nulla?",
         },
         "Cassandra":{
             "key":"Cassandra",
@@ -227,7 +227,7 @@ const myskills={
                 "alt":"N/A",
                 "url":"https://raw.githubusercontent.com/ArindamSharma/ArindamSharma/main/img/skill/cassandra.png",
             },
-            "description":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, tenetur tempora! Fugiat amets explicabo. Cupiditate, praesentium.",
+            "description":"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore maxime aspernatur, reprehenderit rerum unde esse deserunt sint in numquam libero, facilis laudantium tempora alias sequi at eligendi possimus enim? Nulla?",
         },
         "Postgres":{
             "key":"Postgres",
@@ -238,7 +238,7 @@ const myskills={
                 "alt":"N/A",
                 "url":"https://raw.githubusercontent.com/ArindamSharma/ArindamSharma/main/img/skill/postgresql.png",
             },
-            "description":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, tenetur tempora! Fugiat amets explicabo. Cupiditate, praesentium.",
+            "description":"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore maxime aspernatur, reprehenderit rerum unde esse deserunt sint in numquam libero, facilis laudantium tempora alias sequi at eligendi possimus enim? Nulla?",
         },
     // },
     // "Softwares/Tools":{
@@ -251,7 +251,7 @@ const myskills={
                 "alt":"N/A",
                 "url":"https://raw.githubusercontent.com/ArindamSharma/ArindamSharma/main/img/skill/shellscript2.png",
             },
-            "description":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, tenetur tempora! Fugiat amets explicabo. Cupiditate, praesentium.",
+            "description":"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore maxime aspernatur, reprehenderit rerum unde esse deserunt sint in numquam libero, facilis laudantium tempora alias sequi at eligendi possimus enim? Nulla?",
         },
         "Maven":{
             "key":"Maven",
@@ -262,7 +262,7 @@ const myskills={
                 "alt":"N/A",
                 "url":"https://raw.githubusercontent.com/ArindamSharma/ArindamSharma/main/img/skill/maven.png",
             },
-            "description":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, tenetur tempora! Fugiat amets explicabo. Cupiditate, praesentium.",
+            "description":"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore maxime aspernatur, reprehenderit rerum unde esse deserunt sint in numquam libero, facilis laudantium tempora alias sequi at eligendi possimus enim? Nulla?",
         },
         "VS Code":{
             "key":"VS Code",
@@ -273,7 +273,7 @@ const myskills={
                 "alt":"N/A",
                 "url":"https://raw.githubusercontent.com/ArindamSharma/ArindamSharma/main/img/skill/vscode.png",
             },
-            "description":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, tenetur tempora! Fugiat amets explicabo. Cupiditate, praesentium.",
+            "description":"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore maxime aspernatur, reprehenderit rerum unde esse deserunt sint in numquam libero, facilis laudantium tempora alias sequi at eligendi possimus enim? Nulla?",
         },
         "Postman":{
             "key":"Postman",
@@ -284,7 +284,7 @@ const myskills={
                 "alt":"N/A",
                 "url":"https://raw.githubusercontent.com/ArindamSharma/ArindamSharma/main/img/skill/postman.png",
             },
-            "description":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, tenetur tempora! Fugiat amets explicabo. Cupiditate, praesentium.",
+            "description":"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore maxime aspernatur, reprehenderit rerum unde esse deserunt sint in numquam libero, facilis laudantium tempora alias sequi at eligendi possimus enim? Nulla?",
         },
         "AdobeXD":{
             "key":"AdobeXD",
@@ -295,7 +295,7 @@ const myskills={
                 "alt":"N/A",
                 "url":"https://raw.githubusercontent.com/ArindamSharma/ArindamSharma/main/img/skill/xd.png",
             },
-            "description":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, tenetur tempora! Fugiat amets explicabo. Cupiditate, praesentium.",
+            "description":"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore maxime aspernatur, reprehenderit rerum unde esse deserunt sint in numquam libero, facilis laudantium tempora alias sequi at eligendi possimus enim? Nulla?",
         },
         "Figma":{
             "key":"Figma",
@@ -306,7 +306,7 @@ const myskills={
                 "alt":"N/A",
                 "url":"https://raw.githubusercontent.com/ArindamSharma/ArindamSharma/main/img/skill/figma.png",
             },
-            "description":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, tenetur tempora! Fugiat amets explicabo. Cupiditate, praesentium.",
+            "description":"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore maxime aspernatur, reprehenderit rerum unde esse deserunt sint in numquam libero, facilis laudantium tempora alias sequi at eligendi possimus enim? Nulla?",
         },
         "Arduino":{
             "key":"Arduino",
@@ -317,7 +317,7 @@ const myskills={
                 "alt":"N/A",
                 "url":"https://raw.githubusercontent.com/ArindamSharma/ArindamSharma/main/img/skill/arduino.png",
             },
-            "description":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, tenetur tempora! Fugiat amets explicabo. Cupiditate, praesentium.",
+            "description":"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore maxime aspernatur, reprehenderit rerum unde esse deserunt sint in numquam libero, facilis laudantium tempora alias sequi at eligendi possimus enim? Nulla?",
         },
     },
 }
@@ -599,7 +599,7 @@ const myachievement=[
     {
         "title":"Achieved first place in Chakravyuha (Robotic competition)",
         "organization":"Samgatha 2018 (College Fest)",
-        "description":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat obcaecati dolores officiis repudiandae, voluptas pariatur quo tempora perferendis sed voluptates aperiam odio, illo, fugiat doloremque provident modi praesentium qui ea!",
+        "description":"",
         "url":[
             {
                 "link-text":"Facebook Page",
