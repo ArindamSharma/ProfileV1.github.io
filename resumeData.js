@@ -1,6 +1,3 @@
-// Global Variables
-var menuToggle;
-// var scrollLocation=window.scrollY;
 
 const myskills={
     // Note on Adding multiple section the javascript scroll wont work for now
@@ -77,7 +74,7 @@ const myskills={
         "JavaScript":{
             "key":"JavaScript",
             "label":"JavaScript",
-            "rate":2,
+            "rate":2.5,
             "scale":5,
             "img":{
                 "alt":"N/A",
@@ -87,58 +84,47 @@ const myskills={
         },
     // },
     // "FrameWorks/Libraries":{
-        "Keras":{
-            "key":"Keras",
-            "label":"Keras",
-            "rate":3,
-            "scale":5,
-            "img":{
-                "alt":"N/A",
-                "url":"https://raw.githubusercontent.com/ArindamSharma/ArindamSharma/main/img/skill/nodejs.png",
-            },
-            "description":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, tenetur tempora! Fugiat amets explicabo. Cupiditate, praesentium.",
-        },
         "OpenGL":{
             "key":"OpenGL",
             "label":"OpenGL",
-            "rate":3,
+            "rate":2.5,
             "scale":5,
             "img":{
                 "alt":"N/A",
-                "url":"https://raw.githubusercontent.com/ArindamSharma/ArindamSharma/main/img/skill/nodejs.png",
+                "url":"https://raw.githubusercontent.com/ArindamSharma/ArindamSharma/main/img/skill/opengl.png",
             },
             "description":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, tenetur tempora! Fugiat amets explicabo. Cupiditate, praesentium.",
         },
         "OpenCV":{
             "key":"OpenCV",
             "label":"OpenCV",
-            "rate":3,
+            "rate":2,
             "scale":5,
             "img":{
                 "alt":"N/A",
-                "url":"https://raw.githubusercontent.com/ArindamSharma/ArindamSharma/main/img/skill/nodejs.png",
+                "url":"https://raw.githubusercontent.com/ArindamSharma/ArindamSharma/main/img/skill/opencv.png",
             },
             "description":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, tenetur tempora! Fugiat amets explicabo. Cupiditate, praesentium.",
         },
         "jquery":{
             "key":"jquery",
             "label":"JQuery",
-            "rate":3,
+            "rate":2,
             "scale":5,
             "img":{
                 "alt":"N/A",
-                "url":"https://raw.githubusercontent.com/ArindamSharma/ArindamSharma/main/img/skill/nodejs.png",
+                "url":"https://raw.githubusercontent.com/ArindamSharma/ArindamSharma/main/img/skill/jquery.png",
             },
             "description":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, tenetur tempora! Fugiat amets explicabo. Cupiditate, praesentium.",
         },
         "Ajax":{
             "key":"Ajax",
             "label":"Ajax",
-            "rate":3,
+            "rate":2,
             "scale":5,
             "img":{
                 "alt":"N/A",
-                "url":"https://raw.githubusercontent.com/ArindamSharma/ArindamSharma/main/img/skill/nodejs.png",
+                "url":"https://raw.githubusercontent.com/ArindamSharma/ArindamSharma/main/img/skill/ajax2.png",
             },
             "description":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, tenetur tempora! Fugiat amets explicabo. Cupiditate, praesentium.",
         },
@@ -149,7 +135,7 @@ const myskills={
             "scale":5,
             "img":{
                 "alt":"N/A",
-                "url":"https://raw.githubusercontent.com/ArindamSharma/ArindamSharma/main/img/skill/expressjs.png",
+                "url":"https://raw.githubusercontent.com/ArindamSharma/ArindamSharma/main/img/skill/bootstrap.png",
             },
             "description":"BootStrap is CSS Framework Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, tenetur tempora! Fugiat ams explicabo. Cupiditate, praesentium.",
         },
@@ -167,29 +153,29 @@ const myskills={
         "Spring-FrameWork":{
             "key":"Spring-FrameWork",
             "label":"Spring FrameWork",
-            "rate":2,
+            "rate":1,
             "scale":5,
             "img":{
                 "alt":"N/A",
-                "url":"https://raw.githubusercontent.com/ArindamSharma/ArindamSharma/main/img/skill/expressjs.png",
+                "url":"https://raw.githubusercontent.com/ArindamSharma/ArindamSharma/main/img/skill/spring.png",
             },
             "description":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, tenetur tempora! Fugiat amets explicabo. Cupiditate, praesentium.",
         },
         "Play-FrameWork":{
             "key":"Play-FrameWork",
             "label":"Play FrameWork",
-            "rate":2,
+            "rate":1,
             "scale":5,
             "img":{
                 "alt":"N/A",
-                "url":"https://raw.githubusercontent.com/ArindamSharma/ArindamSharma/main/img/skill/expressjs.png",
+                "url":"https://raw.githubusercontent.com/ArindamSharma/ArindamSharma/main/img/skill/play.png",
             },
             "description":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, tenetur tempora! Fugiat amets explicabo. Cupiditate, praesentium.",
         },
         "Flask-FrameWork":{
             "key":"Flask-FrameWork",
             "label":"Flask FrameWork",
-            "rate":2,
+            "rate":3,
             "scale":5,
             "img":{
                 "alt":"N/A",
@@ -205,6 +191,17 @@ const myskills={
             "img":{
                 "alt":"N/A",
                 "url":"https://raw.githubusercontent.com/ArindamSharma/ArindamSharma/main/img/skill/nodejs.png",
+            },
+            "description":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, tenetur tempora! Fugiat amets explicabo. Cupiditate, praesentium.",
+        },
+        "Keras":{
+            "key":"Keras",
+            "label":"Keras",
+            "rate":1,
+            "scale":5,
+            "img":{
+                "alt":"N/A",
+                "url":"https://raw.githubusercontent.com/ArindamSharma/ArindamSharma/main/img/skill/keras.png",
             },
             "description":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, tenetur tempora! Fugiat amets explicabo. Cupiditate, praesentium.",
         },
@@ -224,7 +221,7 @@ const myskills={
         "Cassandra":{
             "key":"Cassandra",
             "label":"Cassandra",
-            "rate":3,
+            "rate":2,
             "scale":5,
             "img":{
                 "alt":"N/A",
@@ -235,11 +232,11 @@ const myskills={
         "Postgres":{
             "key":"Postgres",
             "label":"PostGreSql",
-            "rate":3,
+            "rate":1,
             "scale":5,
             "img":{
                 "alt":"N/A",
-                "url":"https://raw.githubusercontent.com/ArindamSharma/ArindamSharma/main/img/skill/cassandra.png",
+                "url":"https://raw.githubusercontent.com/ArindamSharma/ArindamSharma/main/img/skill/postgresql.png",
             },
             "description":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, tenetur tempora! Fugiat amets explicabo. Cupiditate, praesentium.",
         },
@@ -248,18 +245,18 @@ const myskills={
         "ShellScript":{
             "key":"ShellScript",
             "label":"Shell Scripting",
-            "rate":5,
+            "rate":3,
             "scale":5,
             "img":{
                 "alt":"N/A",
-                "url":"https://raw.githubusercontent.com/ArindamSharma/ArindamSharma/main/img/skill/maven.png",
+                "url":"https://raw.githubusercontent.com/ArindamSharma/ArindamSharma/main/img/skill/shellscript2.png",
             },
             "description":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, tenetur tempora! Fugiat amets explicabo. Cupiditate, praesentium.",
         },
         "Maven":{
             "key":"Maven",
             "label":"Maven",
-            "rate":5,
+            "rate":2,
             "scale":5,
             "img":{
                 "alt":"N/A",
@@ -314,11 +311,11 @@ const myskills={
         "Arduino":{
             "key":"Arduino",
             "label":"Arduino UNO",
-            "rate":2.5,
+            "rate":3,
             "scale":5,
             "img":{
                 "alt":"N/A",
-                "url":"https://raw.githubusercontent.com/ArindamSharma/ArindamSharma/main/img/skill/postman.png",
+                "url":"https://raw.githubusercontent.com/ArindamSharma/ArindamSharma/main/img/skill/arduino.png",
             },
             "description":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, tenetur tempora! Fugiat amets explicabo. Cupiditate, praesentium.",
         },
@@ -489,6 +486,28 @@ const myprojects=[
             myskills[""]["AdobeXD"],
         ],
     },
+    {
+        "title":"For More Other Project ",
+        "url":[
+            {
+                "link-text":"Github",
+                "link":"https://github.com/ArindamSharma/",
+            },
+            {
+                "link-text":"Figma",
+                "link":undefined,
+            },
+        ],
+        "description":"Other Project are Here",
+        "img":[
+            {
+                "alt":"N/A",
+                "url":undefined,
+            },
+        ],
+        "date":"Follow The Links",
+        "skills":[],
+    },
 ];
 const myexp=[
     {
@@ -505,7 +524,7 @@ const myexp=[
         "img":[
             {
                 "alt":"N/A",
-                "url":undefined,
+                "url":"./img/vassarlabs.jpg",
             },
         ],
         "date":"May 2021- Nov 2021",
@@ -514,7 +533,7 @@ const myexp=[
             myskills[""]["Cassandra"],
             myskills[""]["MYSQL"],
             myskills[""]["Postgres"],
-            myskills[""]["Play-Framework"],
+            myskills[""]["Play-FrameWork"],
             myskills[""]["Nodejs"],
             myskills[""]["Maven"],
             myskills[""]["Spring-FrameWork"]
@@ -534,7 +553,7 @@ const myexp=[
         "img":[
             {
                 "alt":"N/A",
-                "url":undefined,
+                "url":"./img/placement.png",
             },
         ],
         "date":"July 2020 - Sep 2020",
@@ -561,7 +580,7 @@ const myexp=[
         "img":[
             {
                 "alt":"N/A",
-                "url":undefined,
+                "url":"./img/bitsdurg.png",
             },
         ],
         "date":"Sep 2018 - Dec 2018",
@@ -580,6 +599,139 @@ const myachievement=[
     {
         "title":"Achieved first place in Chakravyuha (Robotic competition)",
         "organization":"Samgatha 2018 (College Fest)",
-        "img":"",
+        "description":"",
+        "url":[
+            {
+                "link-text":"",
+                "link":undefined,
+            },
+        ],
+        "img":[
+            {
+                "alt":"N/A",
+                "url":undefined,
+            },
+        ],
     },
 ]
+const mycontact={
+    "social-media":{      
+        "instagram":{
+            "key":"instagram",
+            "link-text":"Instagram",
+            "url":"https://www.instagram.com/arindam__s/",
+            "logo":{
+                "url":"https://raw.githubusercontent.com/ArindamSharma/ArindamSharma/main/img/contact/instagram.png",
+                "alt":"N/A",
+            },
+        },
+        "facebook":{
+            "key":"facebook",
+            "link-text":"Facebook",
+            "url":"https://www.facebook.com/profile.php?id=100016351571912",
+            "logo":{
+                "url":"https://raw.githubusercontent.com/ArindamSharma/ArindamSharma/main/img/contact/facebook.png",
+                "alt":"N/A",
+            },
+        },
+        "twitter":{
+            "key":"twitter",
+            "link-text":"Twitter",
+            "url":"https://twitter.com/Arindam10400450",
+            "logo":{
+                "url":"https://raw.githubusercontent.com/ArindamSharma/ArindamSharma/main/img/contact/twitter.png",
+                "alt":"N/A",
+            },
+        },
+    },
+    "phone-based":{
+        "whatsapp":{
+            "key":"whatsapp",
+            "link-text":"WhatsApp",
+            "url":undefined,
+            "url":"tel:0000000000",
+            "logo":{
+                "url":"https://raw.githubusercontent.com/ArindamSharma/ArindamSharma/main/img/contact/whatsapp.png",
+                "alt":"N/A",
+            },
+        },
+        "phone":{
+            "key":"phone",
+            "link-text":"Phone",
+            "url":undefined,
+            "url":"tel:0000000000",
+            "logo":{
+                "url":"https://raw.githubusercontent.com/ArindamSharma/ArindamSharma/main/img/contact/phone.png",
+                "alt":"N/A",
+            },
+        },
+    },
+    "coding-platform":{
+        "hackerrank":{
+            "key":"hackerrank",
+            "link-text":"HackerRank",
+            "url":"https://www.hackerrank.com/ArindamSharma",
+            "logo":{
+                "url":"https://raw.githubusercontent.com/ArindamSharma/ArindamSharma/main/img/contact/whatsapp.png",
+                "alt":"N/A",
+            },
+        },
+        "hackerearth":{
+            "key":"hackerearth",
+            "link-text":"HackerEarth",
+            "url":"https://www.hackerearth.com/@ArindamSharma",
+            "logo":{
+                "url":"https://raw.githubusercontent.com/ArindamSharma/ArindamSharma/main/img/contact/whatsapp.png",
+                "alt":"N/A",
+            },
+        },
+        "leetcode":{
+            "key":"leetcode",
+            "link-text":"LeetCode",
+            "url":"https://leetcode.com/ArindamSharma/",
+            "logo":{
+                "url":"https://raw.githubusercontent.com/ArindamSharma/ArindamSharma/main/img/contact/whatsapp.png",
+                "alt":"N/A",
+            },
+        },
+        "codechef":{
+            "key":"CodeChef",
+            "link-text":"",
+            "url":"https://www.codechef.com/users/arindam_s/",
+            "logo":{
+                "url":"https://raw.githubusercontent.com/ArindamSharma/ArindamSharma/main/img/contact/whatsapp.png",
+                "alt":"N/A",
+            },
+        },
+    },
+    "general-account":{      
+        "github":{
+            "key":"github",
+            "link-text":"Github",
+            "url":"https://github.com/ArindamSharma/",
+            "logo":{
+                "url":"https://raw.githubusercontent.com/ArindamSharma/ArindamSharma/main/img/contact/github32px.png",
+                "alt":"N/A",
+            },
+        },
+        "linkedin":{
+            "key":"linkedin",
+            "link-text":"Linkedin",
+            "url":"https://www.linkedin.com/in/arindamsharma18/",
+            "logo":{
+                "url":"https://raw.githubusercontent.com/ArindamSharma/ArindamSharma/main/img/contact/linkedin.png",
+                "alt":"N/A",
+            },
+        },
+        "gmail":{
+            "key":"gmail",
+            "link-text":"Gmail",
+            "url":"mailto:arindamsharma1998@gmail.com",
+            "logo":{
+                "url":"https://raw.githubusercontent.com/ArindamSharma/ArindamSharma/main/img/contact/gmail.png",
+                "alt":"N/A",
+            },
+        },
+    },
+}
+mycontact["coding-platform"]["github"]=mycontact["general-account"]["github"];

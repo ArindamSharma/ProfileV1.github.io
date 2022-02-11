@@ -192,7 +192,7 @@ html{
 .main-container-home-content-image{
     z-index: -1;
     height: 30vw;
-    filter: drop-shadow(-50px 10px 9px rgba(100, 100, 100, 0.89));
+    filter: drop-shadow(-3vw 10px 9px rgba(100, 100, 100, 0.89));
 }
 .main-container-home-content-text-h1{
     padding: 15px;
@@ -306,98 +306,102 @@ html{
 }
 .main-container-projectbox{
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
     padding-bottom: 40px;
 }
 .main-container-projectbox-elementbox{
+    min-width: 100px;
+    max-width: 25vw;
     margin: 1vw;
-    padding: 4vw 3vw;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
-    flex-direction: row;
+    flex-direction: column;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: rgba(197, 197, 197, 0.5);
     border-radius: 10px;
     transition: all .5s;
+    text-align: center;
 }
 .main-container-projectbox-elementbox:hover{
-    margin: 2vw;
+    /* margin: 2vw; */
     box-shadow: 0 0 10px rgb(155, 155, 155);
 }
-.main-container-projectbox-elementbox:nth-child(even){
-    /* flex-direction: row-reverse; */
+.main-container-projectbox-elementbox>*:not(:first-child){
+    padding: 10px;
 }
 .main-container-projectbox-element-img{
     width: 25vw;
-    width: 25vw;
+    border-radius: inherit;
 }
-.main-container-projectbox-element-textcontainer{
-    max-width: 50vw;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-}
-.main-container-projectbox-elementbox:nth-child(even) .main-container-projectbox-element-textcontainer{
-    /* align-items: flex-start; */
-    /* text-align: start; */
-}
-.main-container-projectbox-element-textcontainer-title{
+.main-container-projectbox-element-title{
     font-size: 20px;
     font-weight: 800;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }   
-.main-container-projectbox-element-textcontainer-description{
+.main-container-projectbox-element-description{
     text-align: inherit;
-    max-width: 30vw;
 }
-.main-container-projectbox-element-textcontainer-date{
+.main-container-projectbox-element-date{
     /* text-align: inherit; */
 }
-.main-container-projectbox-element-textcontainer-linkbox{
+.main-container-projectbox-element-linkbox{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    align-items: inherit;
+    justify-content: inherit;
 }
-.main-container-projectbox-element-textcontainer-link{
+.main-container-projectbox-element-link{
     text-decoration: none;
     margin: 10px;
     padding: 5px 10px 5px 10px;
     border-radius: 50px;
     color: white;
     background-color: rgba(85, 85, 85, 0.603);
+    transition: all .3s;
 }
-.main-container-projectbox-element-textcontainer-skillbox{
+.main-container-projectbox-element-link:hover{
+    box-shadow: 0 0 5px rgb(34, 34, 34);
+}
+.main-container-projectbox-element-skillbox{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    align-items: center;
+    align-items: inherit;
+    justify-content: inherit;
 }
-.main-container-projectbox-element-textcontainer-skill-label{
+.main-container-projectbox-element-skill-label{
     font-weight: 600;
     padding: 10px;
 }
-.main-container-projectbox-element-textcontainer-skill-link{
+.main-container-projectbox-element-skill-link{
     text-decoration: none;
     padding: 10px;
+    border-radius: 50px;
 }
-.main-container-projectbox-element-textcontainer-skill-img{
+.main-container-projectbox-element-skill-img{
     height: 30px;
+    transition: all .5s;
+    
+}
+.main-container-projectbox-element-skill-img:hover{
+    height: 32px;
 }
 
 /* Experience Container */
 .main-container-experience{
-    background-color: rgb(92, 92, 92);
+    background-color: rgb(206, 206, 206);
     /* box-shadow: 0px -10px 10px #9494947e; */
     padding-right: 3vw;
     padding-left: calc(6.5rem + 5vw);
     padding-top: 5rem;
 }
 .main-container-experience>span{
-    color: rgb(206, 206, 206);
+    /* color: rgb(206, 206, 206); */
 }
 .main-container-expbox{
     display: flex;
@@ -405,16 +409,78 @@ html{
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    padding: 2vw 0 3vw 0;
 }
 .main-container-expcard{
-    width: 50vw;
+    max-width: 25vw;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    background-color: rgba(231, 231, 231, 0.342);
+    margin: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* padding: 20px; */
+    border-radius: 10px;
+    text-align: center;
+    transition: all .5s;
 }
-
-
+.main-container-expcard:hover{
+    box-shadow: 0 0 10px grey;
+}
+.main-container-expcard>*:not(:first-child){
+    padding: 5px 15px 5px 15px;
+}
+.main-container-expcard-img{
+    width: 25vw;
+    height: 17vw;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.main-container-expcard-title{
+    font-size: larger;
+    font-weight: 700;
+}
+.main-container-expcard-loc{}
+.main-container-expcard-org{}
+.main-container-expcard-date{}
+.main-container-expcard-desc{}
+.main-container-expcard-linkbox{
+    display: flex;
+    justify-content: inherit;
+    flex-wrap: wrap;
+    justify-content: inherit;
+    align-items: inherit;
+}
+.main-container-expcard-link{
+    background-color: rgba(116, 116, 116, 0.658);
+    border-radius: 50px;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    transition: all .5s;
+}
+.main-container-expcard-link:hover{
+    box-shadow: 0 0 5px rgba(75, 75, 75, 0.616);
+}
+.main-container-expcard-skillbox{
+    display: flex;
+    justify-content: inherit;
+    flex-wrap: wrap;
+    justify-content: inherit;
+    align-items: inherit;
+}
+.main-container-expcard-skillbox-label{}
+.main-container-expcard-skill-link{
+    padding: 5px;
+}
+.main-container-expcard-skill-img{
+    height: 30px;
+    transition: all .5s;
+}
+.main-container-expcard-skill-img:hover{
+    height: 32px;
+}
 
 /* Achievement Container */
 .main-container-achieve{

@@ -1,13 +1,18 @@
+// Global Variables
+var menuToggle;
+// var scrollLocation=window.scrollY;
+
+
 function OnLoadFunctions(){
     loadSkillToHTML();
     loadProjectToHTML();
-    // loadExpToHTML();
+    loadExpToHTML();
     // loadAchievementToHTML();
+    loadContactToHTML();
 }
 window.onscroll=function(){
     navbarBG();
 }
-
 function searchSubmit(){
     let keyword=document.getElementsByClassName("navbar-top-searchbox-input")[0];
     console.log(keyword.value);
@@ -61,17 +66,34 @@ function OnClickMenuToggleOff(){
         label.classList.remove('navbar-left-menu-item-link-label-switch');
     }
 }
-
 function skillScrollLeft(element){
     document.getElementsByClassName("main-container-skill-hwidget-card-container")[0].scrollLeft -=window.screen.width/3;
     // console.log(element.parentElement); 
 }
-
 function skillScrollRight(element){
     // console.log(element); 
     document.getElementsByClassName("main-container-skill-hwidget-card-container")[0].scrollLeft +=window.screen.width/3;
 }
-
+function rbgForPercentage(percentage){
+    // red to yellow to green
+    // (r,g,b)
+    // Red 255, 0, 0.
+    // Yellow 255, 255, 0. 
+    // Green 0, 255, 0
+    var r=0,g=0,b=0;
+    if(percentage<=0.5){
+        r=255; // b=0
+        g=percentage*2*255;
+        b=0;
+    }
+    else{
+        r=(1-percentage)*2*255;
+        g=255;
+        b=0;
+    }
+    return "rgb("+r+","+g+","+b+")";
+    
+}
 function arcLoad(classDiv,text,total){
 
     var deg=(text/total)*Math.PI;
@@ -84,12 +106,14 @@ function arcLoad(classDiv,text,total){
     context.lineWidth=30;
     
     context.beginPath();
-    context.strokeStyle = 'grey';
+    context.strokeStyle = 'rgb(209, 209, 209)'; //background
     context.arc(width, height, 100,- Math.PI,0);
     context.stroke();
     
     context.beginPath();
-    context.strokeStyle = 'green';
+    // console.log(rbgForPercentage(text/total));
+    // context.strokeStyle = 'rgb(153.00000000000003,101.99999999999997,0)'; //progress
+    context.strokeStyle = rbgForPercentage(text/total); //progress
     context.arc(width, height, 100,- Math.PI,-Math.PI+deg);
     context.stroke();
     
@@ -99,7 +123,20 @@ function arcLoad(classDiv,text,total){
     context.fillText(text+"/"+total, width-((text+"/"+total).length/2)*20, height);
 
 }
-
+function elementCreator(element,classlist=[],attributelist=[],text="",childrenlist=[]){
+    var x=document.createElement(element);
+    classlist.forEach(classname => {x.classList.add(classname);});
+    // for (const myclass of classlist) {x.classList.add(myclass);}
+    attributelist.forEach(obj=>{for (const key in obj) {
+        x.setAttribute(key,obj[key]);
+    }})
+    // for (const key in attributelist) {
+    //     x.setAttribute(key,attributelist[key]);
+    // }
+    x.innerHTML=text;
+    for (const children of childrenlist) {x.appendChild(children)}
+    return x;
+}
 function loadSkillToHTML(){
     var skillElementDiv=document.getElementById("skills")
     // console.log(skillElementDiv);
@@ -184,7 +221,6 @@ function loadSkillToHTML(){
         skillElementDiv.appendChild(categoryDiv);
     }
 }
-
 function loadProjectToHTML(){
     var projectElementDiv=document.getElementById("project");
     var projectContainer=document.createElement("div");
@@ -199,67 +235,71 @@ function loadProjectToHTML(){
         // for now considering only 1 image
         projectimg.setAttribute("src",project["img"][0]["url"]);
         projectimg.setAttribute("alt",project["img"][0]["alt"]);
+        if(project["img"][0]["url"]==undefined)
+            projectimg.setAttribute("src","./img/na.jpg");
 
-        var projecttextcontainer=document.createElement("div");
-        projecttextcontainer.classList.add("main-container-projectbox-element-textcontainer");
+        projectElement.appendChild(projectimg);
+        // var projecttextcontainer=document.createElement("div");
+        // projecttextcontainer.classList.add("main-container-projectbox-element");
 
         var textcontainertitle=document.createElement("span");
-        textcontainertitle.classList.add("main-container-projectbox-element-textcontainer-title");
+        textcontainertitle.classList.add("main-container-projectbox-element-title");
         textcontainertitle.innerHTML=project["title"];
-
-        var textcontainerdescription=document.createElement("p");
-        textcontainerdescription.classList.add("main-container-projectbox-element-textcontainer-description");
-        textcontainerdescription.innerHTML=project["description"];
+        projectElement.appendChild(textcontainertitle);
 
         var textcontainerdate=document.createElement("span");
-        textcontainerdate.classList.add("main-container-projectbox-element-textcontainer-date");
+        textcontainerdate.classList.add("main-container-projectbox-element-date");
         textcontainerdate.innerHTML=project["date"];
+        projectElement.appendChild(textcontainerdate);
+
+        var textcontainerdescription=document.createElement("p");
+        textcontainerdescription.classList.add("main-container-projectbox-element-description");
+        textcontainerdescription.innerHTML=project["description"];
+        projectElement.appendChild(textcontainerdescription);
 
         var textcontainerlinkbox=document.createElement("div");
-        textcontainerlinkbox.classList.add("main-container-projectbox-element-textcontainer-linkbox");
+        textcontainerlinkbox.classList.add("main-container-projectbox-element-linkbox");
         for (const link of project["url"]) {
             if(link["link"]==undefined){continue;}
             var textcontainerlink=document.createElement("a");
-            textcontainerlink.classList.add("main-container-projectbox-element-textcontainer-link");
+            textcontainerlink.classList.add("main-container-projectbox-element-link");
             textcontainerlink.setAttribute("href",link["link"]);
             textcontainerlink.innerHTML=link["link-text"];
 
             textcontainerlinkbox.appendChild(textcontainerlink);
         }
+        projectElement.appendChild(textcontainerlinkbox);
+        
+        // console.log(project);
+        if(project["skills"].length!=0){
+            var textcontainerskillbox=document.createElement("div");
+            textcontainerskillbox.classList.add("main-container-projectbox-element-skillbox");
 
-        var textcontainerskillbox=document.createElement("div");
-        textcontainerskillbox.classList.add("main-container-projectbox-element-textcontainer-skillbox");
-        var textcontainerskillboxlabel=document.createElement("span");
-        textcontainerskillboxlabel.classList.add("main-container-projectbox-element-textcontainer-skill-label");
-        textcontainerskillboxlabel.innerHTML="Skills : ";
-
-        textcontainerskillbox.appendChild(textcontainerskillboxlabel);
-        // console.log(project["skills"]);
-        for (const skill of project["skills"]) {
-            var textcontainerskilllink=document.createElement("a");
-            textcontainerskilllink.classList.add("main-container-projectbox-element-textcontainer-skill-link");
+            var textcontainerskillboxlabel=document.createElement("span");
+            textcontainerskillboxlabel.classList.add("main-container-projectbox-element-skill-label");
+            textcontainerskillboxlabel.innerHTML="Skills : ";
             
-            textcontainerskilllink.setAttribute("href","#"+skill["key"]);
-            var textcontainerskillimg=document.createElement("img");
-            textcontainerskillimg.classList.add("main-container-projectbox-element-textcontainer-skill-img");
-            
-            // console.log("imgdetails :",skill["img"]["url"]);
-            textcontainerskillimg.setAttribute("src",skill["img"]["url"]);
+            textcontainerskillbox.appendChild(textcontainerskillboxlabel);
+            // console.log(project["skills"]);
+            for (const skill of project["skills"]) {
+                var textcontainerskilllink=document.createElement("a");
+                textcontainerskilllink.classList.add("main-container-projectbox-element-skill-link");
+                
+                textcontainerskilllink.setAttribute("href","#"+skill["key"]);
+                var textcontainerskillimg=document.createElement("img");
+                textcontainerskillimg.classList.add("main-container-projectbox-element-skill-img");
+                
+                // console.log("imgdetails :",skill["img"]["url"]);
+                textcontainerskillimg.setAttribute("src",skill["img"]["url"]);
 
-            textcontainerskillimg.setAttribute("alt",skill["img"]["alt"]);
-            
-            textcontainerskilllink.appendChild(textcontainerskillimg);
-            textcontainerskillbox.appendChild(textcontainerskilllink);
-        }
+                textcontainerskillimg.setAttribute("alt",skill["img"]["alt"]);
+                
+                textcontainerskilllink.appendChild(textcontainerskillimg);
+                textcontainerskillbox.appendChild(textcontainerskilllink);
+            }
+            projectElement.appendChild(textcontainerskillbox);
+        } 
 
-        projecttextcontainer.appendChild(textcontainertitle);
-        projecttextcontainer.appendChild(textcontainerdate);
-        projecttextcontainer.appendChild(textcontainerdescription);
-        projecttextcontainer.appendChild(textcontainerlinkbox);
-        projecttextcontainer.appendChild(textcontainerskillbox);
-
-        projectElement.appendChild(projectimg);
-        projectElement.appendChild(projecttextcontainer);
 
         projectContainer.appendChild(projectElement);
     }
@@ -270,12 +310,108 @@ function loadExpToHTML(){
     var expBox=document.createElement("div");
     expBox.classList.add("main-container-expbox");
 
+    for (const exp of myexp) {
+        var expcard=document.createElement("div");
+        expcard.classList.add("main-container-expcard");
 
+        var expcard_img=document.createElement("img");
+        expcard_img.classList.add("main-container-expcard-img");
+        // for now considering only 1 image
+        expcard_img.setAttribute("src",exp["img"][0]["url"]);
+        expcard_img.setAttribute("alt",exp["img"][0]["alt"]);
+        if(exp["img"][0]["url"]==undefined)
+            expcard_img.setAttribute("src","./img/na.jpg");
 
+        expcard.appendChild(expcard_img);
+        
+        var expcard_title=document.createElement("span");
+        expcard_title.classList.add("main-container-expcard-title");
+        expcard_title.innerHTML=exp["title"];
+        expcard.appendChild(expcard_title);
+        
+        var expcard_location=document.createElement("span");
+        expcard_location.classList.add("main-container-expcard-loc");
+        expcard_location.innerHTML="<b>Location : </b>"+exp["location"];
+        expcard.appendChild(expcard_location);
+        
+        var expcard_org=document.createElement("span");
+        expcard_org.classList.add("main-container-expcard-org");
+        expcard_org.innerHTML="<b>Organization : </b>"+exp["organization"];
+        expcard.appendChild(expcard_org);
+        
+        var expcard_date=document.createElement("span");
+        expcard_date.classList.add("main-container-expcard-date");
+        expcard_date.innerHTML="<b>Duration : </b>"+exp["date"];
+        expcard.appendChild(expcard_date);
+        
+        var expcard_desc=document.createElement("p");
+        expcard_desc.classList.add("main-container-expcard-desc");
+        expcard_desc.innerHTML=exp["description"];
+        expcard.appendChild(expcard_desc);
+        
+        
+        var expcard_linkbox=document.createElement("div");
+        expcard_linkbox.classList.add("main-container-expcard-linkbox");
+        for (const link of exp["url"]) {
+            if(link["link"]==undefined){continue;}
+            var expcard_link=document.createElement("a");
+            expcard_link.classList.add("main-container-expcard-link");
+            expcard_link.setAttribute("href",link["link"]);
+            expcard_link.innerHTML=link["link-text"];
+            
+            expcard_linkbox.appendChild(expcard_link);
+        }
+        expcard.appendChild(expcard_linkbox);
+        
+        var expcard_skillbox=document.createElement("div");
+        expcard_skillbox.classList.add("main-container-expcard-skillbox");
+        
+        var expcard_skillbox_label=document.createElement("span");
+        expcard_skillbox_label.classList.add("main-container-expcard-skillbox-label");
+        expcard_skillbox_label.innerHTML="<b>Skills : </b>";
+        expcard_skillbox.appendChild(expcard_skillbox_label);
+        
+        // console.log(exp);
+        for (const skill of exp["skills"]) {
+            // console.log(skill);
+            var expcard_skill=document.createElement("a");
+            expcard_skill.classList.add("main-container-expcard-skill-link");
+            expcard_skill.setAttribute("href","#"+skill["key"]);
+
+            var expcard_skillimg=document.createElement("img");
+            expcard_skillimg.classList.add("main-container-expcard-skill-img");
+            
+            expcard_skillimg.setAttribute("src",skill["img"]["url"]);
+            expcard_skillimg.setAttribute("alt",skill["img"]["alt"]);
+            
+            expcard_skill.appendChild(expcard_skillimg);
+            expcard_skillbox.appendChild(expcard_skill);
+        }
+        expcard.appendChild(expcard_skillbox);
+        expBox.appendChild(expcard);
+    }
     expElementDiv.appendChild(expBox);
 }
 function loadAchievementToHTML(){
     var achieveElementDiv=document.getElementById("achieve");
+    
+}
+function loadContactToHTML(){
+    var contactlabelboxDiv=document.getElementById("contact").children[0].children[2];
+    for (const icontact in mycontact["general-account"]) {
+        contactlabelboxDiv.appendChild(
+            elementCreator("a",["main-container-contact-box-labelbox"],[{"href":mycontact["general-account"][icontact]["url"]}],"",[
+                elementCreator("img",["main-container-contact-box-labelbox-img"],[{"src":mycontact["general-account"][icontact]["logo"]["url"]},{"alt":mycontact["general-account"][icontact]["logo"]["alt"]}]),
+                elementCreator("span",["main-container-contact-box-labelbox-text"],[],mycontact["general-account"][icontact]["link-text"]),
+            ]));
+    }
+    for (const icontact in mycontact["social-media"]) {
+        contactlabelboxDiv.appendChild(
+            elementCreator("a",["main-container-contact-box-labelbox"],[{"href":mycontact["social-media"][icontact]["url"]}],"",[
+                elementCreator("img",["main-container-contact-box-labelbox-img"],[{"src":mycontact["social-media"][icontact]["logo"]["url"]},{"alt":mycontact["social-media"][icontact]["logo"]["alt"]}]),
+                elementCreator("span",["main-container-contact-box-labelbox-text"],[],mycontact["social-media"][icontact]["link-text"]),
+            ]));
+    }
 }
 function navbarBG(){
     // console.log(window.scrollY);
