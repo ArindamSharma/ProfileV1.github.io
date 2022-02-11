@@ -7,7 +7,7 @@ function OnLoadFunctions(){
     loadSkillToHTML();
     loadProjectToHTML();
     loadExpToHTML();
-    // loadAchievementToHTML();
+    loadAchievementToHTML();
     loadContactToHTML();
 }
 window.onscroll=function(){
@@ -394,7 +394,28 @@ function loadExpToHTML(){
 }
 function loadAchievementToHTML(){
     var achieveElementDiv=document.getElementById("achieve");
-    
+    var childrenlist=[];
+    for (const elementachieve of myachievement) {
+        var imgelement=elementachieve["img"][0]["url"];
+        if (elementachieve["img"][0]["url"]==undefined){
+            imgelement="./img/na.jpg";
+        }
+        var linklist=[];
+        for (const link of elementachieve["url"]) {
+            if(link["link"]==undefined){continue;}
+            linklist.push(elementCreator("a",["main-container-achieve-listitem-link"],[{"href":link["link"]}],link["link-text"]));
+        }
+        childrenlist.push(elementCreator("div",["main-container-achieve-listitem"],[],"",[
+            elementCreator("img",["main-container-achieve-listitem-img"],[{"src":imgelement},{"alt":elementachieve["img"][0]["alt"]}]),
+            elementCreator("div",["main-container-achieve-listitem-innerbox"],[],"",[
+                elementCreator("span",["main-container-achieve-listitem-title"],[],elementachieve["title"],[]),
+                elementCreator("span",["main-container-achieve-listitem-org"],[],"<b>Organization : </b>"+elementachieve["organization"],[]),
+                elementCreator("p",["main-container-achieve-listitem-description"],[],elementachieve["description"],[]),
+                elementCreator("div",["main-container-achieve-listitem-linkbox"],[],"",linklist),
+            ]),
+        ]));
+    }
+    achieveElementDiv.appendChild(elementCreator("div",["main-container-achieve-listbox"],[],"",childrenlist));
 }
 function loadContactToHTML(){
     var contactlabelboxDiv=document.getElementById("contact").children[0].children[2];

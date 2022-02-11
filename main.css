@@ -490,8 +490,63 @@ html{
     padding-left: calc(6.5rem + 5vw);
     padding-top: 5rem;
 }
+.main-container-achieve-listbox{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 20px;
+}
+.main-container-achieve-listitem{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 15px;
+    border-bottom: 2px solid rgba(102, 102, 102, 0.445);
+}
+.main-container-achieve-listitem-img{
+    /* height: 20vw; */
+    width:25vw;
+    max-width: 300px;
+    object-fit: cover;
+}
+.main-container-achieve-listitem-innerbox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+}
+.main-container-achieve-listitem-innerbox> * {
+    padding: 10px;
+    /* background-color: black; */
+}
+.main-container-achieve-listitem-title{
+    font-size: 25px;
+    font-weight: 700;
 
+}
+.main-container-achieve-listitem-org{
+}
+.main-container-achieve-listitem-description{
+    width: 50vw;
+}
+.main-container-achieve-listitem-linkbox{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
 
+}
+.main-container-achieve-listitem-link{
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    background-color: grey;
+    border-radius: 40px;
+    margin-left: 10px;
+}
 
 
 /* Contact Container */

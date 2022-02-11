@@ -599,7 +599,7 @@ const myachievement=[
     {
         "title":"Achieved first place in Chakravyuha (Robotic competition)",
         "organization":"Samgatha 2018 (College Fest)",
-        "description":"",
+        "description":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat obcaecati dolores officiis repudiandae, voluptas pariatur quo tempora perferendis sed voluptates aperiam odio, illo, fugiat doloremque provident modi praesentium qui ea!",
         "url":[
             {
                 "link-text":"",
@@ -733,5 +733,5 @@ const mycontact={
             },
         },
     },
-}
+};
 mycontact["coding-platform"]["github"]=mycontact["general-account"]["github"];
