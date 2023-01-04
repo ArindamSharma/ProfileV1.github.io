@@ -1,7 +1,7 @@
 // Global Variables
 var menuToggle=document.getElementsByClassName("navbar-top-menu-toggle-icon")[0];
 // var scrollLocation=window.scrollY;
-
+// import {myskills} from "./resumeData"
 
 function OnLoadFunctions(){
     loadSkillToHTML();

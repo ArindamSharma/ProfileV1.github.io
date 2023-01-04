@@ -17,8 +17,9 @@ Ideas :
 * https://images.app.goo.gl/6voF3mNyN43uWUp18
 * https://images.app.goo.gl/in4tASSXQni6q3hH6
 * https://img.cssbased.com/images/2015/05/site_48254.jpg
-* 
+* https://cherupil.com/
 
 Brilant Web Design (Simple and Nice)
 * https://electerious.com/
 * https://www.ojieame.design/
+* http://www.pascalvangemert.nl/#/profile
